@@ -1,0 +1,141 @@
+\documentclass[polish,12pt,oneside]{mwbk}
+
+% marginesy
+\usepackage[a4paper,includeheadfoot,inner=3.0cm,outer=2.5cm,top=3cm,bottom=3cm]{geometry}
+
+%\setlength\overfullrule{5pt}    % nie wiem co to
+\linespread{1.1} %trochę powietrza
+\clubpenalty=10000 %nie dieli wyrazów pomiędzy stronami 
+%\widowpenalty=10000 %nie pozostawia wdów i sierot pojedynczych 
+
+% usawienia nagłówków stron
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headsep}{2em}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO,RE]{\textit{\nouppercase{\leftmark}}}
+
+% do składu matematki
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+
+% pseudokod jak u Rivesta i Cormena
+%\usepackage{newalg}
+%\newcommand{\algnazwa}[1]{\textsc{#1}}
+%\newcommand{\varnazwa}[1]{$#1$}
+
+% przyzwoity listing kodu
+%\usepackage{listings}
+%\lstset{language=perl,basicstyle=\tiny,frame=lines,emphstyle=\underbar,numberstyle=\tiny,numbersep=5pt}
+
+% do includowania grafiki
+\usepackage[pdftex]{graphicx}
+% najogólniejsze środowisko na rysunki
+\newenvironment{specrysunek}%
+{\begin{figure}\centering}%
+{\end{figure}}
+% wstawia rysunek i o ile nie podano skali do zmniejsza o połowę
+\newcommand{\wstawrysunek}[2][scale=0.5]{\includegraphics[#1]{#2}}
+% all-in-one wstawiające rysunek, dające etykietkę i podpis
+\newcommand{\rysunek}[4][scale=0.5]{\begin{specrysunek}\wstawrysunek[#1]{#2}\caption{#3}\label{#4}\end{specrysunek}}
+
+\usepackage[utf8]{inputenc}       % bo piszę w utf-ie
+\usepackage[polish,french]{babel} % języki, które będą w pracy (do dzielenia wyrazów)
+\usepackage{polski}               % ale zasadniczo to po polsku będzie
+
+%\usepackage[all]{xy}       % potwór do rysowania
+%\usepackage{subfigure}     % rysunki w rysunkach
+%\usepackage[table]{xcolor} % normalne nazwy kolorów
+%\usepackage{tabularx}      % lepsze tabelki
+%\usepackage{verbatim}      % <pre>
+\usepackage{hyperref}       % odnośniki w pdf-ie
+%\usepackage{natbib}        % ?
+\bibliographystyle{plplain} % normalna zwykła bibliografia
+%\hyphenation{graphviz}     % wyrazy, których nie ma dzielić pomiędzy linie
+
+%\usepackage{showidx}  % do debugowania indeksu
+\usepackage{makeidx}   % do robienia indeksu
+\makeindex             % zrób indeks
+
+\newcommand{\cudzyslow}[1]{,,#1''}       % zwyczajowy czydzysłów dla polskiego
+\newcommand{\cytuj}[1]{ \cite{#1}}       % polski alias na komendę
+\newcommand{\przypis}[1]{\footnote{#1}}  % polski alias na komendę
+\newcommand{\indeks}{\index}             % polski alias na komendę
+
+\newcommand{\produkt}[1]{\textsc{#1}}
+
+% środowisko do cytatów
+\newenvironment{cytat}%
+{\begin{quote}}%
+{\end{quote}}
+
+% w razie pracy matematycznej
+%\newtheorem{warunek}{Warunek}
+%
+%\newtheorem{definicjaa}{Definicja}
+%\newenvironment{definicja}[1][]%
+%{\begin{definicjaa}[#1]}%
+%{\end{definicjaa}}
+%
+%\newtheorem{twierdzenie}{Twierdzenie}
+%\newtheorem{lemat}{Lemat}
+
+% środowisko do przykładu
+%\newenvironment{przyklad}[1][Przykład.]%
+%{\begin{trivlist}\item[\hskip \labelsep {\bfseries #1}]}%
+%{\end{trivlist}}
+
+% dowód tj. przykład
+%\newenvironment{dowod}[1][Dowód.]%
+%{\begin{przyklad}[#1]}%
+%{\end{przyklad}}
+
+% wniosek z tw. też jak przykład
+%\newenvironment{wniosek}[1][Wniosek.]%
+%{\begin{przyklad}[#1]}%
+%{\end{przyklad}}
+
+
+\begin{document}
+\selectlanguage{polish}
+
+% odręcza strona tytułowa
+\begin{titlepage}
+\begin{center}
+{\Large Nazwa Szkoły}\\[16em]
+
+\textsf{\huge Imię i Nazwisko}\\[1em]
+\textsf{\Huge Tytuł pracy\\który nie mieści się w jednej linii}\\[2em]
+{\Large Praca inżynierska}\\[1em]
+{\Large Promotor: stopień naukowy Imię Nazwisko}
+
+\vfill
+
+{\Large MIEJSCE ZŁOŻENIA 2011}
+\end{center}
+\end{titlepage}
+
+\addtocounter{page}{1}     % strona tytułowa to też strona i trzeba ją liczyć
+\setcounter{tocdepth}{3}   % spis treści na 3 poziomy
+\tableofcontents           % zrób spis
+
+% pliki do zaczytania
+\input{wstep}          
+\input{teoria}
+\input{praktyka}
+\input{zakonczenie}
+
+\bibliography{literatura}  % bibliografia
+
+\cleardoublepage     % magia
+\phantomsection      % magia
+\listoffigures       % lista rysunków
+
+\cleardoublepage     % magia
+\phantomsection      % magia
+%\addcontentsline{toc}{chapter}{Indeks}   % indeksu nie umiesza się w spisie treści, ale jeśli ktoś musi...
+\printindex          % wstaw indeks
+
+\end{document}
