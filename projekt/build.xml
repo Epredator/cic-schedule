@@ -4,7 +4,7 @@
   <property name="gwt.args" value="" />
 
   <!-- Configure path to GWT SDK -->
-  <property name="gwt.sdk" location="/home/tomaszk/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0" />
+  <property name="gwt.sdk" location="/home/adas/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0" />
 
   <path id="project.class.path">
     <pathelement location="war/WEB-INF/classes"/>
@@ -18,6 +18,9 @@
     <mkdir dir="war/WEB-INF/lib" />
     <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-servlet.jar" />
     <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-servlet-deps.jar" />
+  <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-servlet-deps.jar" />
+ <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-dnd-3.1.2.jar" />
+ <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-cal-0.9.3-dndCreation-SNAPSHOT.jar" />
     <!-- Add any additional server libs that need to be copied -->
   </target>
 
@@ -39,8 +42,8 @@
       <classpath>
         <pathelement location="src"/>
         <path refid="project.class.path"/>
-        <pathelement location="/home/tomaszk/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA.jar" />
-        <pathelement location="/home/tomaszk/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar" />
+        <pathelement location="/home/adas/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA.jar" />
+        <pathelement location="/home/adas/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar" />
       </classpath>
       <!-- add jvmarg -Xss16M or similar if you see a StackOverflowError -->
       <jvmarg value="-Xmx256M"/>
@@ -57,8 +60,8 @@
       <classpath>
         <pathelement location="src"/>
         <path refid="project.class.path"/>
-        <pathelement location="/home/tomaszk/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA.jar" />
-        <pathelement location="/home/tomaszk/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar" />
+        <pathelement location="/home/adas/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA.jar" />
+        <pathelement location="/home/adas/nauczanie/wsksim/sem/at/projekt/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar" />
       </classpath>
       <jvmarg value="-Xmx256M"/>
       <arg value="-startupUrl"/>
