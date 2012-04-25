@@ -35,10 +35,14 @@ import com.google.gwt.widget.client.TextButton;
  */
 public class Scheduler implements EntryPoint {
 	
-	private DatePicker datePicker = new DatePicker();
+	 private DatePicker datePicker = new DatePicker();
+	 private CalendarSettings settings = new CalendarSettings();
 	
 	//Deklaruje kontroliki
 	/**
+
+	 
+	 
 	private DecoratedTabPanel decoratedTabPanel = new DecoratedTabPanel();
 	private VerticalPanel verticalPanel = new VerticalPanel();
 	private HorizontalPanel horizontalPanel_2 = new HorizontalPanel();
@@ -137,53 +141,41 @@ public class Scheduler implements EntryPoint {
 	 * This is the entry point method.
 	 */
 
-	private CalendarSettings settings = new CalendarSettings();
+	
 	
 	
 	public void onModuleLoad() {
-		final Label errorLabel = new Label();
 
 		// Add the nameField and sendButton to the RootPanel
 		// Use RootPanel.get() to get the entire body element
 		RootPanel rootPanel = RootPanel.get("nameFieldContainer");
 		rootPanel.setSize("95%", "95%");
-		RootPanel.get("errorLabelContainer").add(errorLabel);
 		
 		DecoratedTabPanel decoratedTabPanel = new DecoratedTabPanel(); //EntryPoint add
 		rootPanel.add(decoratedTabPanel, 10, 10);
-		decoratedTabPanel.setSize("95%", "95%");
+		decoratedTabPanel.setSize("80%", "100%");
 		
-
-		
-		
-		/* Un-comment for iCal version of demo */
-//		RootPanel.get().add(new iCalCalendarPanel());
-		
-		/* Un-comment for Google version of demo */
-	
-			
-				
-				
 
 		VerticalPanel verticalPanel = new VerticalPanel(); //EntryPoint add
 		decoratedTabPanel.add(verticalPanel, "Calendar", false);
-		verticalPanel.setSize("100%", "3cm");
+		verticalPanel.setSize("80%", "80%");
 			
-			
+		//change hour offset to false to facilitate iCal style
+		settings.setOffsetHourLabels(true);
+		settings.setTimeBlockClickNumber(Click.Double);
+
+GoogleCalendarPanel googleCalendarPanel = new GoogleCalendarPanel();
+verticalPanel.add(googleCalendarPanel);
+googleCalendarPanel.setSize("95%", "95%");
 				
 				
-				//change hour offset to false to facilitate iCal style
-				settings.setOffsetHourLabels(true);
-				settings.setTimeBlockClickNumber(Click.Double);
-		
-		GoogleCalendarPanel googleCalendarPanel = new GoogleCalendarPanel();
-		verticalPanel.add(googleCalendarPanel);
-		googleCalendarPanel.setSize("95%", "95%");
+
+	
 		
 		VerticalPanel verticalPanel_group = new VerticalPanel(); //EntryPoint add
 		verticalPanel_group.setSpacing(5);
 		decoratedTabPanel.add(verticalPanel_group, "Group", false);
-		verticalPanel_group.setSize("800px", "800px");
+		verticalPanel_group.setSize("80%", "80%");
 		
 		
 		
@@ -192,7 +184,7 @@ public class Scheduler implements EntryPoint {
 		grid_1.setCellSpacing(5);
 		grid_1.setCellPadding(5);
 		verticalPanel_group.add(grid_1);
-		grid_1.setWidth("458px");
+		grid_1.setSize("80%", "80%");
 		
 		Label label_4 = new Label("Group name:"); //EntryPoint add
 		label_4.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_LEFT);
@@ -616,7 +608,7 @@ public class Scheduler implements EntryPoint {
 		RadioButton radioButton_4 = new RadioButton("new name", "by agencies");
 		grid_10.setWidget(1, 0, radioButton_4);
 
-		// Create the popup dialog box
+		/*** Create the popup dialog box domyslna aplikacja
 		final DialogBox dialogBox = new DialogBox();
 		dialogBox.setText("Remote Procedure Call");
 		dialogBox.setAnimationEnabled(true);
@@ -634,7 +626,7 @@ public class Scheduler implements EntryPoint {
 		dialogVPanel.setHorizontalAlignment(VerticalPanel.ALIGN_RIGHT);
 		dialogVPanel.add(closeButton);
 		dialogBox.setWidget(dialogVPanel);
-		
+		**/
 		
 		
 		
