@@ -19,8 +19,8 @@
     <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-servlet.jar" />
     <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-servlet-deps.jar" />
   <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-servlet-deps.jar" />
- <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-dnd-3.1.2.jar" />
- <copy todir="war/WEB-INF/lib" file="${gwt.sdk}/gwt-cal-0.9.3-dndCreation-SNAPSHOT.jar" />
+ <copy todir="war/WEB-INF/lib" file="./lib/gwt-dnd-3.1.2.jar" />
+ <copy todir="war/WEB-INF/lib" file="./lib/gwt-cal-0.9.3-dndCreation-SNAPSHOT.jar" />
     <!-- Add any additional server libs that need to be copied -->
   </target>
 
