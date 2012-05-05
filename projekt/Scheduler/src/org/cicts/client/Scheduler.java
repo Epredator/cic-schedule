@@ -5,13 +5,11 @@ import com.bradrydzewski.gwt.calendar.client.CalendarSettings.Click;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.cellview.client.SimplePager;
 import com.google.gwt.user.client.ui.AbsolutePanel;
-import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.CaptionPanel;
 import com.google.gwt.user.client.ui.DecoratedTabPanel;
-import com.google.gwt.user.client.ui.DialogBox;
+import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.DoubleBox;
 import com.google.gwt.user.client.ui.Grid;
-import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import com.google.gwt.user.client.ui.HorizontalPanel;
@@ -38,33 +36,33 @@ public class Scheduler implements EntryPoint {
 	 private DatePicker datePicker = new DatePicker();
 	 private CalendarSettings settings = new CalendarSettings();
 	
-	//Deklaruje kontroliki
-	/**
 
-	 
-	 
 	private DecoratedTabPanel decoratedTabPanel = new DecoratedTabPanel();
-	private VerticalPanel verticalPanel = new VerticalPanel();
-	private HorizontalPanel horizontalPanel_2 = new HorizontalPanel();
-	private VerticalPanel verticalPanel_group = new VerticalPanel();
-	private Grid grid_1 = new Grid(5, 4);
-	private Label label_4 = new Label("Group name:"); 
+	
+
+	//all tabs
+	private VerticalPanel verticalPanelCal = new VerticalPanel();
+	private VerticalPanel verticalPanelGroup = new VerticalPanel();
+	private VerticalPanel verticalPanelAgency = new VerticalPanel();
+	private VerticalPanel verticalPanelReport = new VerticalPanel();
+	
+	
+	private GoogleCalendarPanel googleCalendarPanel = new GoogleCalendarPanel();
+	
+	private DockPanel dockPanelGroup = new DockPanel(); 
+	private Grid gridGroup = new Grid(5, 4);
+	private Label labelGroupName = new Label("Group name:"); 
+	
 	private DoubleBox doubleBox = new DoubleBox();
 	private HorizontalPanel horizontalPanel_4 = new HorizontalPanel(); 
 	private InlineLabel inlineLabel_19 = new InlineLabel("ID:"); 
 	private IntegerBox integerBox_5 = new IntegerBox();
 	private SimplePager simplePager = new SimplePager();
-	private InlineLabel inlineLabel_3 = new InlineLabel("Responsible:"); 
 	private LongBox longBox_5 = new LongBox(); 
 	private InlineLabel inlineLabel_4 = new InlineLabel("Phone:"); 
 	private IntegerBox integerBox_2 = new IntegerBox();
 	private TextButton textButton_3 = new TextButton("add more"); 
-	private InlineLabel inlineLabel_5 = new InlineLabel("E-mail:"); 
-	private LongBox longBox_6 = new LongBox();
-	private TextButton textButton_4 = new TextButton("add more");
-	private Label label_1 = new Label("Other contact:"); 
 	private TextArea textArea_2 = new TextArea(); 
-	private Grid grid_3 = new Grid(2, 3); 
 	private	InlineLabel inlineLabel_11 = new InlineLabel("No. Bishops:");
 	private	InlineLabel inlineLabel_12 = new InlineLabel("No. Priest:"); 
 	private	InlineLabel inlineLabel_13 = new InlineLabel("No. Participants:"); 
@@ -74,6 +72,22 @@ public class Scheduler implements EntryPoint {
 	private	HorizontalPanel horizontalPanel = new HorizontalPanel(); 
 	private	Grid grid = new Grid(6, 2);
 	private InlineLabel inlineLabel = new InlineLabel("Country:"); 
+	private TextButton textButton_4 = new TextButton("add more");
+	
+	
+	
+	
+	
+	private HorizontalPanel horizontalPanel_2 = new HorizontalPanel();
+	private Grid gridGroupNumbers  = new Grid(2, 3); 
+
+	
+	
+	private InlineLabel inlineLabel_3 = new InlineLabel("Responsible:"); 
+	private InlineLabel inlineLabel_5 = new InlineLabel("E-mail:"); 
+	private LongBox longBox_6 = new LongBox();
+	private Label label_1 = new Label("Other contact:"); 
+	
 	private SuggestBox suggestBox = new SuggestBox();
 	private InlineLabel inlineLabel_1 = new InlineLabel("Language:");
 	private SuggestBox suggestBox_1 = new SuggestBox();
@@ -105,7 +119,6 @@ public class Scheduler implements EntryPoint {
 	private InlineLabel inlineLabel_16 = new InlineLabel("Sanct.superior:");
 	private LongBox longBox = new LongBox();
 	private InlineLabel inlineLabel_17 = new InlineLabel("Phone:");
-	
 	private IntegerBox integerBox_4 = new IntegerBox(); 
 	private TextButton textButton = new TextButton("add more"); 
 	private InlineLabel inlineLabel_18 = new InlineLabel("E-mail:"); 
@@ -133,7 +146,7 @@ public class Scheduler implements EntryPoint {
 	private VerticalPanel verticalPanel_reports = new VerticalPanel(); 
 	private CaptionPanel cptnpnlGroups = new CaptionPanel("Groups:");
 	private RadioButton rdbtnByCountry = new RadioButton("new name", "by country");
- */
+ 
 
 	
 	
@@ -146,168 +159,124 @@ public class Scheduler implements EntryPoint {
 	
 	public void onModuleLoad() {
 
-		// Add the nameField and sendButton to the RootPanel
+		
 		// Use RootPanel.get() to get the entire body element
-		RootPanel rootPanel = RootPanel.get("nameFieldContainer");
-		rootPanel.setSize("95%", "95%");
+		RootPanel.get("nameFieldContainer").add(decoratedTabPanel);
+
 		
-		DecoratedTabPanel decoratedTabPanel = new DecoratedTabPanel(); //EntryPoint add
-		rootPanel.add(decoratedTabPanel, 10, 10);
-		decoratedTabPanel.setSize("80%", "100%");
-		
-
-		VerticalPanel verticalPanel = new VerticalPanel(); //EntryPoint add
-		decoratedTabPanel.add(verticalPanel, "Calendar", false);
-		verticalPanel.setSize("80%", "80%");
-			
-		//change hour offset to false to facilitate iCal style
-		settings.setOffsetHourLabels(true);
-		settings.setTimeBlockClickNumber(Click.Double);
-
-GoogleCalendarPanel googleCalendarPanel = new GoogleCalendarPanel();
-verticalPanel.add(googleCalendarPanel);
-googleCalendarPanel.setSize("95%", "95%");
-				
-				
-
+		//Assemble  decoratedTabPanel (root Panel) with all tabs
+		decoratedTabPanel.add(verticalPanelCal, "Calendar", false);
+		decoratedTabPanel.add(verticalPanelGroup, "Group", false);
+		decoratedTabPanel.add(verticalPanelAgency, "Agencies", false);
+		decoratedTabPanel.add(verticalPanelReport, "Reports", false);
 	
 		
-		VerticalPanel verticalPanel_group = new VerticalPanel(); //EntryPoint add
-		verticalPanel_group.setSpacing(5);
-		decoratedTabPanel.add(verticalPanel_group, "Group", false);
-		verticalPanel_group.setSize("80%", "80%");
+		//Assemble  verticalPanelCal  with CalendarPanel.java
+		verticalPanelCal.add(googleCalendarPanel);
+		//verticalPanelCal.setSize("50%", "50%");  //bad idea to uncomment it ;)
+		
+	
+				
+		//OPTIONS for calendar -change hour offset to false to facilitate iCal style
+		settings.setOffsetHourLabels(false);
+		settings.setTimeBlockClickNumber(Click.Double);
 		
 		
+//=========================================================================================	
 		
-		Grid grid_1 = new Grid(5, 4); //EntryPoint add
-		grid_1.setBorderWidth(0);
-		grid_1.setCellSpacing(5);
-		grid_1.setCellPadding(5);
-		verticalPanel_group.add(grid_1);
-		grid_1.setSize("80%", "80%");
+		//Assemble  verticalPanelGroup with  dockPanelGroup 
+		//verticalPanelGroup.add(dockPanelGroup);
 		
-		Label label_4 = new Label("Group name:"); //EntryPoint add
-		label_4.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.setWidget(0, 0, label_4);
-		label_4.setWidth("93px");
+		//Assemble  verticalPanelGroup with other controls
+		verticalPanelGroup.add(gridGroup);
+		gridGroup.setWidget(0, 0, labelGroupName);
+		gridGroup.setWidget(0, 1, doubleBox);
+		gridGroup.setWidget(0, 3, simplePager);
+		gridGroup.setWidget(1, 0, inlineLabel_3);
+		gridGroup.setWidget(1, 1, longBox_5);
+		gridGroup.setWidget(2, 0, inlineLabel_4);
+		gridGroup.setWidget(2, 1, integerBox_2);
+		gridGroup.setWidget(2, 2, textButton_3);
+		gridGroup.setWidget(3, 0, inlineLabel_5);
+		gridGroup.setWidget(3, 1, longBox_6);
+		gridGroup.setWidget(3, 2, textButton_4); 
+		gridGroup.setWidget(4, 0, label_1);
+		gridGroup.setWidget(4, 1, textArea_2);
+
+		gridGroup.setWidget(0, 2, horizontalPanel_4);
+		gridGroup.setWidget(4, 2, gridGroupNumbers);
 		
-		DoubleBox doubleBox = new DoubleBox(); //EntryPoint add
+		
+
+		//gridGroup.setBorderWidth(0);
+		//gridGroup.setCellSpacing(5);
+		//gridGroup.setCellPadding(5);
+		//gridGroup.setSize("80%", "80%");
+		
+		labelGroupName.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_LEFT);
+		labelGroupName.setWidth("93px");
+		
 		doubleBox.setAlignment(TextAlignment.LEFT);
-		grid_1.setWidget(0, 1, doubleBox);
 		doubleBox.setWidth("150px");
-		
-		HorizontalPanel horizontalPanel_4 = new HorizontalPanel(); //EntryPoint add
-		grid_1.setWidget(0, 2, horizontalPanel_4);
-		
-		InlineLabel inlineLabel_19 = new InlineLabel("ID:"); //EntryPoint add
+
 		horizontalPanel_4.add(inlineLabel_19);
-		
-		IntegerBox integerBox_5 = new IntegerBox(); //EntryPoint add
+
 		horizontalPanel_4.add(integerBox_5);
 		integerBox_5.setWidth("51px");
 		
-		SimplePager simplePager = new SimplePager(); //EntryPoint add
-		grid_1.setWidget(0, 3, simplePager);
-		
-		InlineLabel inlineLabel_3 = new InlineLabel("Responsible:"); //EntryPoint add
-		grid_1.setWidget(1, 0, inlineLabel_3);
 		inlineLabel_3.setSize("71px", "31px");
-		
-		LongBox longBox_5 = new LongBox(); //EntryPoint add
+				
 		longBox_5.setAlignment(TextAlignment.LEFT);
-		grid_1.setWidget(1, 1, longBox_5);
 		longBox_5.setSize("150px", "100%");
-		
-		InlineLabel inlineLabel_4 = new InlineLabel("Phone:"); //EntryPoint add
-		grid_1.setWidget(2, 0, inlineLabel_4);
+
 		inlineLabel_4.setHeight("100%");
-		
-		IntegerBox integerBox_2 = new IntegerBox(); //EntryPoint add
-		grid_1.setWidget(2, 1, integerBox_2);
+
 		integerBox_2.setWidth("150px");
-		
-		TextButton textButton_3 = new TextButton("add more"); //EntryPoint add
-		grid_1.setWidget(2, 2, textButton_3);
+
 		textButton_3.setSize("70px", "45px");
-		
-		InlineLabel inlineLabel_5 = new InlineLabel("E-mail:"); //EntryPoint add
-		grid_1.setWidget(3, 0, inlineLabel_5);
-		
-		LongBox longBox_6 = new LongBox(); //EntryPoint add
-		grid_1.setWidget(3, 1, longBox_6);
+
 		longBox_6.setSize("150px", "16px");
-		
-		TextButton textButton_4 = new TextButton("add more"); //EntryPoint add
-		grid_1.setWidget(3, 2, textButton_4); 
+
 		textButton_4.setSize("70px", "45px");
 		
-		Label label_1 = new Label("Other contact:"); //EntryPoint add
-		grid_1.setWidget(4, 0, label_1);
-		
-		TextArea textArea_2 = new TextArea(); //EntryPoint add
 		textArea_2.setAlignment(TextAlignment.LEFT);
-		grid_1.setWidget(4, 1, textArea_2);
+		
 		textArea_2.setSize("150px", "100%");
-		grid_1.getCellFormatter().setVerticalAlignment(2, 2, HasVerticalAlignment.ALIGN_MIDDLE);
-		grid_1.getCellFormatter().setVerticalAlignment(3, 2, HasVerticalAlignment.ALIGN_MIDDLE);
-		grid_1.getCellFormatter().setVerticalAlignment(2, 1, HasVerticalAlignment.ALIGN_MIDDLE);
-		grid_1.getCellFormatter().setVerticalAlignment(3, 1, HasVerticalAlignment.ALIGN_MIDDLE);
-		grid_1.getCellFormatter().setHorizontalAlignment(1, 0, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(2, 0, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(3, 0, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(4, 0, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(3, 2, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(2, 2, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(1, 1, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(2, 1, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(3, 1, HasHorizontalAlignment.ALIGN_LEFT);
-		grid_1.getCellFormatter().setHorizontalAlignment(4, 1, HasHorizontalAlignment.ALIGN_LEFT);
-		
-		Grid grid_3 = new Grid(2, 3);  //EntryPoint add
-		grid_1.setWidget(4, 2, grid_3);
-		
-		InlineLabel inlineLabel_11 = new InlineLabel("No. Bishops:"); //EntryPoint add
-		grid_3.setWidget(0, 0, inlineLabel_11);
-		
-		InlineLabel inlineLabel_12 = new InlineLabel("No. Priest:"); //EntryPoint add
-		grid_3.setWidget(0, 1, inlineLabel_12);
-		
-		InlineLabel inlineLabel_13 = new InlineLabel("No. Participants:"); //EntryPoint add
-		grid_3.setWidget(0, 2, inlineLabel_13);
-		
-		
 
 		
-		
-		IntegerBox integerBox = new IntegerBox();//EntryPoint add 
-		grid_3.setWidget(1, 0, integerBox);
+		Grid gridGroupNumbers = new Grid(2, 3);  //EntryPoint add
+
+		gridGroupNumbers.setWidget(0, 0, inlineLabel_11);
+
+		gridGroupNumbers.setWidget(0, 1, inlineLabel_12);
+
+		gridGroupNumbers.setWidget(0, 2, inlineLabel_13);
+
+		gridGroupNumbers.setWidget(1, 0, integerBox);
 		integerBox.setWidth("50px");
-		
-		IntegerBox integerBox_6 = new IntegerBox(); //EntryPoint add 
-		grid_3.setWidget(1, 1, integerBox_6);
+		/**
+	//	IntegerBox integerBox_6 = new IntegerBox(); //EntryPoint add 
+		gridGroupNumbers.setWidget(1, 1, integerBox_6);
 		integerBox_6.setWidth("50px");
 		
-		IntegerBox integerBox_7 = new IntegerBox(); //EntryPoint add 
-		grid_3.setWidget(1, 2, integerBox_7);
+	//	IntegerBox integerBox_7 = new IntegerBox(); //EntryPoint add 
+		gridGroupNumbers.setWidget(1, 2, integerBox_7);
 		integerBox_7.setWidth("50px");
 		
-		HorizontalPanel horizontalPanel = new HorizontalPanel(); //EntryPoint add 
-		verticalPanel_group.add(horizontalPanel);
+	//	HorizontalPanel horizontalPanel = new HorizontalPanel(); //EntryPoint add 
+		dockPanelGroup.add(horizontalPanel);
 		
-		Grid grid = new Grid(6, 2);//EntryPoint add  
+	//	Grid grid = new Grid(6, 2);//EntryPoint add  
 		grid.setCellSpacing(5);
 		grid.setCellPadding(5);
 		horizontalPanel.add(grid);
 		 
-		InlineLabel inlineLabel = new InlineLabel("Country:");  //EntryPoint add 
+	//	InlineLabel inlineLabel = new InlineLabel("Country:");  //EntryPoint add 
 		grid.setWidget(0, 0, inlineLabel);
 		
-		
+		**/
+		//=========================================================================================	
 
-		
-		
-		
-		
 		SuggestBox suggestBox = new SuggestBox(); //EntryPoint add 
 		grid.setWidget(0, 1, suggestBox);
 		
@@ -341,6 +310,10 @@ googleCalendarPanel.setSize("95%", "95%");
 		TextArea textArea_1 = new TextArea(); //EntryPoint add 
 		grid.setWidget(5, 1, textArea_1);
 		textArea_1.setSize("177px", "30px");
+		
+		
+		
+		
 		
 		AbsolutePanel absolutePanel_1 = new AbsolutePanel(); //EntryPoint add 
 		horizontalPanel.add(absolutePanel_1);
