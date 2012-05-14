@@ -215,15 +215,16 @@ public class GoogleCalendarPanel extends FlowPanel {
                 }
 			}
 		});
+       
 
         ArrayList<Appointment> appts = AppointmentBuilder.build();
         calendar.suspendLayout();
         calendar.addAppointments(appts);
-
+        /* 
         // Create a couple of multi day appointments for demoing purposes...
         Date today = new Date();
 
-        Appointment multiDayAppt = new Appointment();
+       Appointment multiDayAppt = new Appointment();
         multiDayAppt.setStyle(AppointmentStyle.BLUE);
         multiDayAppt.setStart(
                 new Date(today.getYear(), today.getMonth(), today.getDate(),
@@ -233,7 +234,7 @@ public class GoogleCalendarPanel extends FlowPanel {
         multiDayAppt.setTitle("All day 1");
 //        multiDayAppt.setMultiDay(true);
         calendar.addAppointment(multiDayAppt);
-        
+ 
         Appointment multiDayApptA = new Appointment();
         multiDayApptA.setStart(
                 new Date(today.getYear(), today.getMonth(), today.getDate(),
@@ -254,10 +255,11 @@ public class GoogleCalendarPanel extends FlowPanel {
         multiDayAppt2.setTitle("All day 2");
         multiDayAppt2.setStyle(AppointmentStyle.RED);
 //        multiDayAppt2.setMultiDay(true);
-        calendar.addAppointment(multiDayAppt2);
 
+        calendar.addAppointment(multiDayAppt2);
+         */
         calendar.resumeLayout();
-        
+       
         
         
         calendar.addDateRequestHandler(new DateRequestHandler<Date>(){
@@ -265,7 +267,8 @@ public class GoogleCalendarPanel extends FlowPanel {
 			public void onDateRequested(DateRequestEvent<Date> event) {
 				Window.alert("requested: " + event.getTarget() + " " + ((Element)event.getClicked()).getInnerText());
 			}
-        });
+        }); 
+       
     }
 
     /**

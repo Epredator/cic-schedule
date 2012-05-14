@@ -5,6 +5,8 @@ import com.bradrydzewski.gwt.calendar.client.CalendarSettings.Click;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.user.cellview.client.SimplePager;
+import com.google.gwt.user.client.Timer;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.CaptionPanel;
 import com.google.gwt.user.client.ui.DecoratedTabPanel;
@@ -40,12 +42,13 @@ public class Scheduler implements EntryPoint {
 	
 	private StackLayoutPanel StackLayoutPanelGroup = new StackLayoutPanel(Unit.EM);
 	private SplitLayoutPanel splitLayoutPanelGroup = new SplitLayoutPanel();
-	 
-	 
-	 
+	private VerticalPanel  VerticalPanelGroupBottom  = new VerticalPanel();
+	private  Label labelGroupSearch = new Label("SEARCH:"); 
+	private SuggestBox SuggestBoxGroupSearch= new SuggestBox(); 
+	private  Label labelGroupHello = new Label("Hello User!"); 
+
 	//all tabs
 	private VerticalPanel verticalPanelCal = new VerticalPanel();
-	private VerticalPanel verticalPanelGroup = new VerticalPanel();
 	private VerticalPanel verticalPanelAgency = new VerticalPanel();
 	private VerticalPanel verticalPanelPOP = new VerticalPanel();
 	private VerticalPanel verticalPanelReport = new VerticalPanel();
@@ -54,8 +57,11 @@ public class Scheduler implements EntryPoint {
 	 private CalendarSettings settings = new CalendarSettings();
 	 private DecoratedTabPanel decoratedTabPanel = new DecoratedTabPanel();
 	 private GoogleCalendarPanel googleCalendarPanel = new GoogleCalendarPanel();
+	 
+		private StackLayoutPanel StackLayoutPanelCal = new StackLayoutPanel(Unit.EM);
+		private SplitLayoutPanel splitLayoutPanelCal= new SplitLayoutPanel();
 //=========================================================================================		
-	private DockPanel dockPanelGroup = new DockPanel(); 
+	
 	
 	//all  GROUP grids
 	private Grid gridGroup = new Grid(10, 5);
@@ -118,7 +124,7 @@ public class Scheduler implements EntryPoint {
 	private	IntegerBox integerBoxPriest = new IntegerBox(); 
 	private	IntegerBox integerBoxParticipants  = new IntegerBox();
 //=========================================================================================		
-	private DockPanel dockPanelAgency = new DockPanel(); 
+
 	
 	//all  AGENCY grids
 	private Grid gridAgency = new Grid(10, 5);
@@ -176,7 +182,7 @@ public class Scheduler implements EntryPoint {
 	private	IntegerBox integerBoxAgencyPriest= new IntegerBox(); 
 	private	IntegerBox integerBoxAgencyParticipants = new IntegerBox();
 //=========================================================================================		
-	private DockPanel dockPanelPOP= new DockPanel(); 
+
 	
 	//all  POP grids
 	private Grid gridPOP = new Grid(10, 5);
@@ -261,50 +267,74 @@ public class Scheduler implements EntryPoint {
 	private RadioButton rdbtnAccountingByAgencies = new RadioButton("new name", "by agencies");
 	/**
 	 * This is the entry point method.
+	 * 
+	 * 
+	 * 
 	 */
+
 	public void onModuleLoad() {
 		// Use RootPanel.get() to get the entire body element
 		RootPanel.get("nameFieldContainer").add(decoratedTabPanel);
 		
-		
-		
 
-	  //=========================================================================================		
+		
+ //=========================================================================================		
 		//Assemble  decoratedTabPanel (root Panel) with all tabs
-		//decoratedTabPanel.add(verticalPanelCal, "Calendar1", true);
+		decoratedTabPanel.add(splitLayoutPanelCal, "Calendar1", true);
 		decoratedTabPanel.add(splitLayoutPanelGroup, "Group1", true);
 		decoratedTabPanel.add(verticalPanelAgency, "Agencies1", true);
 		decoratedTabPanel.add(verticalPanelPOP, "POP's1:", true);
 		decoratedTabPanel.add(verticalPanelReport, "Reports1", true);
+//=========================================================================================		
+		
+		//splitLayoutPanelCal
+	  splitLayoutPanelCal.setSize("80em", "50em");
+
+	    // Create a three-item stack, with headers sized in EMs. 
+	   
+	    StackLayoutPanelCal.add(new HTML("this"), new HTML("[Options]"), 4);
+	    StackLayoutPanelCal.add(new HTML("that"), new HTML("[View]"), 4);
+	    StackLayoutPanelCal.add(new HTML("the other"), new HTML("[Report]"), 4);
+	    splitLayoutPanelCal.addWest(StackLayoutPanelCal, 100.0);
 		
 		//Assemble  verticalPanelCal  with CalendarPanel.java
-		verticalPanelCal.add(googleCalendarPanel);
-		//verticalPanelCal.setSize("50%", "50%");  //bad idea to uncomment it ;)
+	    splitLayoutPanelCal.add(googleCalendarPanel);
+
+
+		
+		
+		//datePicker
 				
 		//OPTIONS for calendar -change hour offset to false to facilitate iCal style
 		settings.setOffsetHourLabels(false);
 		settings.setTimeBlockClickNumber(Click.Double);
-//=========================================================================================	
-		//Assemble  verticalPanelGroup with  dockPanelGroup 
-		//verticalPanelGroup.add(dockPanelGroup);
+
 		
-	//	dockPanelGroup.add(dateBoxArrival);
-		//dockPanelGroup.add (gridGroup , DockPanel.CENTER);
+		
+		
 
 //=========================================================================================		!NEW SPLIT PANEL! not ready yet ;)
 		
 
-		    decoratedTabPanel.add(splitLayoutPanelGroup, "New tab", false);
-		    splitLayoutPanelGroup.setSize("530px", "327px");
+		
+
+		
+		
 		    // Create a three-item stack, with headers sized in EMs. 
 		   
 		    StackLayoutPanelGroup.add(new HTML("this"), new HTML("[Options]"), 4);
 		    StackLayoutPanelGroup.add(new HTML("that"), new HTML("[View]"), 4);
 		    StackLayoutPanelGroup.add(new HTML("the other"), new HTML("[Report]"), 4);
 		    splitLayoutPanelGroup.addWest(StackLayoutPanelGroup, 100.0);
-		    
-		    
-		    
+		   splitLayoutPanelGroup.addSouth(VerticalPanelGroupBottom, 100.0);
+		   
+		   
+		   VerticalPanelGroupBottom.add(simplePagerGroup);
+		   VerticalPanelGroupBottom.add(labelGroupSearch);
+		   VerticalPanelGroupBottom.add ( SuggestBoxGroupSearch);
+
+		
+		    splitLayoutPanelGroup.setSize("80em", "50em");
 //=========================================================================================	    
 		    
 		//Assemble  verticalPanelGroup with other controls
@@ -312,7 +342,8 @@ public class Scheduler implements EntryPoint {
 		 splitLayoutPanelGroup.add(gridGroup);
 		 
 		
-		gridGroup.setWidget(0, 3, simplePagerGroup);
+		 
+		 gridGroup.setWidget(0, 2, horizontalPanelID);
 		gridGroup.setWidget(0, 2, horizontalPanelID);
 		
 		horizontalPanelID.add(inlineLabelID);
@@ -567,6 +598,9 @@ public class Scheduler implements EntryPoint {
 			gridReportAgency .setSize("500px", "33px");
 			gridReportPOPShrine .setSize("500px", "33px");
 			gridReportAccounting.setSize("500px", "33px");
+			
+			
+			
 			
 		/*** Create the popup dialog box domyslna aplikacja
 		final DialogBox dialogBox = new DialogBox();
