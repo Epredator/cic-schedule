@@ -366,7 +366,7 @@ public class GoogleCalendarPanel extends FlowPanel {
         dialogBox.setWidget(dialogContents);
 
         // Add some text to the top of the dialog
-        HTML eventName = new HTML("Add new Mass");
+        HTML eventName = new HTML("New Event");
         dialogContents.add(eventName);
         final TextBox eventNameText = new TextBox();
         dialogContents.add(eventNameText);
@@ -456,7 +456,7 @@ public class GoogleCalendarPanel extends FlowPanel {
             int newHeight = Window.getClientHeight();
             if (newHeight != height) {
                 height = newHeight;
-                calendar.setHeight(height - 10 + "px");
+                calendar.setHeight(height  + "px");
                 calendar.doSizing();
                 calendar.doLayout();
             }
