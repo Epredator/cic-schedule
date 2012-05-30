@@ -51,23 +51,67 @@ import com.google.gwt.user.datepicker.client.DatePicker;
 public class GoogleCalendarPanel extends FlowPanel {
 
     private Calendar calendar = null;
-    private DatePicker datePicker = new DatePicker();
-    private FlexTable layoutTable = new FlexTable();
+
+    
+	 private DatePicker datePicker = new DatePicker();
     private AbsolutePanel leftPanel = new AbsolutePanel();
+    private DecoratorPanel datePickerDecorator = new DecoratorPanel();
+    
+    
+    
+    private FlexTable layoutTable = new FlexTable();
+   
     private AbsolutePanel topPanel = new AbsolutePanel();
     private DecoratorPanel dayViewDecorator = new DecoratorPanel();
-    private DecoratorPanel datePickerDecorator = new DecoratorPanel();
     private DecoratedTabBar calendarViewsTabBar = new DecoratedTabBar();
+    
+    private Button todayButton = new Button();
+	private Button nextDayButton = new Button();
+	private Button previousDayButton = new Button();
+    
+    
+    
 
     private CalendarSettings settings = new CalendarSettings();
 
     public GoogleCalendarPanel() {
+    	
+    	
+    	//add today button
+		todayButton.setStyleName("todayButton");
+		todayButton.setText("Today");
+		todayButton.addClickHandler(new ClickHandler(){
+			public void onClick(ClickEvent event) {
+				datePicker.setValue(new Date(), true);
+				//dayView.setDate(new Date());
+			}
+		});
+		previousDayButton.setStyleName("previousButton");
+		previousDayButton.setHTML("&laquo;");
+		previousDayButton.addClickHandler(new ClickHandler(){
+			public void onClick(ClickEvent event) {
+				Date d = datePicker.getValue();
+				d.setDate(d.getDate()-1);
+				datePicker.setValue(d,true);
+			}
+		});
+		nextDayButton.setStyleName("nextButton");
+		nextDayButton.setHTML("&raquo;");
+		nextDayButton.addClickHandler(new ClickHandler(){
+			public void onClick(ClickEvent event) {
+				Date d = datePicker.getValue();
+				d.setDate(d.getDate()+1);
+				datePicker.setValue(d,true);
+			}
+		});
+    	
 
+/**
         // style this element as absolute position
         DOM.setStyleAttribute(this.getElement(), "position", "absolute");
-        DOM.setStyleAttribute(this.getElement(), "top", "20px");
+        DOM.setStyleAttribute(this.getElement(), "top", "1px");
         DOM.setStyleAttribute(this.getElement(), "left", "0px");
-
+**/
         configureCalendar();
         configureViewsTabBar();
 
@@ -104,6 +148,11 @@ public class GoogleCalendarPanel extends FlowPanel {
         topPanel.setStyleName("daysTabBar");
         leftPanel.setStyleName("leftPanel");
         leftPanel.add(datePickerDecorator);
+        
+        
+        leftPanel.add(todayButton);
+        leftPanel.add(previousDayButton);
+        leftPanel.add(nextDayButton);
 
         datePickerDecorator.add(datePicker);
         dayViewDecorator.add(calendar);
@@ -111,15 +160,15 @@ public class GoogleCalendarPanel extends FlowPanel {
         layoutTable.setWidth("99%");
         layoutTable.setCellPadding(0);
         layoutTable.setCellSpacing(0);
-        layoutTable.setText(0, 0, "");
+        layoutTable.setText(0, 0, "Choose date:");
         layoutTable.setWidget(0, 1, topPanel);
         layoutTable.setWidget(1, 1, dayViewDecorator);
         layoutTable.setWidget(1, 0, leftPanel);
         layoutTable.getCellFormatter().setVerticalAlignment(1, 0,
-                HasVerticalAlignment.ALIGN_TOP);
+               HasVerticalAlignment.ALIGN_TOP);
         layoutTable.getCellFormatter().setVerticalAlignment(1, 1,
-                HasVerticalAlignment.ALIGN_TOP);
-        layoutTable.getCellFormatter().setWidth(1, 0, "50px");
+               HasVerticalAlignment.ALIGN_TOP);
+      //  layoutTable.getCellFormatter().setWidth(1, 0, "10px");
         add(layoutTable);
 
         // window events to handle resizing
@@ -134,10 +183,10 @@ public class GoogleCalendarPanel extends FlowPanel {
         DeferredCommand.addCommand(new Command() {
             @Override
             public void execute() {
-                calendar.setHeight(Window.getClientHeight() - 85 + "px");
+              calendar.setHeight(Window.getClientHeight() + "px");
             }
         });
-        DOM.setStyleAttribute(getElement(), "padding", "10px");
+       // DOM.setStyleAttribute(getElement(), "padding", "10px");
     }
 
     /**
@@ -407,7 +456,7 @@ public class GoogleCalendarPanel extends FlowPanel {
             int newHeight = Window.getClientHeight();
             if (newHeight != height) {
                 height = newHeight;
-                calendar.setHeight(height - 85 + "px");
+                calendar.setHeight(height - 10 + "px");
                 calendar.doSizing();
                 calendar.doLayout();
             }

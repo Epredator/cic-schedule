@@ -9,6 +9,7 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.CaptionPanel;
+import com.google.gwt.user.client.ui.CustomButton;
 import com.google.gwt.user.client.ui.DecoratedTabPanel;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.DockPanel;
@@ -22,6 +23,7 @@ import com.google.gwt.user.client.ui.InlineLabel;
 import com.google.gwt.user.client.ui.IntegerBox;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.LongBox;
+import com.google.gwt.user.client.ui.PushButton;
 import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.SplitLayoutPanel;
@@ -46,6 +48,11 @@ public class Scheduler implements EntryPoint {
 	private  Label labelGroupSearch = new Label("SEARCH:"); 
 	private SuggestBox SuggestBoxGroupSearch= new SuggestBox(); 
 	private  Label labelGroupHello = new Label("Hello User!"); 
+	
+	private CustomButton CustomButtonAddEvent= new CustomButton() {
+		java.lang.String upText;
+        java.lang.String downText;
+	};
 
 	//all tabs
 	private VerticalPanel verticalPanelCal = new VerticalPanel();
@@ -53,7 +60,7 @@ public class Scheduler implements EntryPoint {
 	private VerticalPanel verticalPanelPOP = new VerticalPanel();
 	private VerticalPanel verticalPanelReport = new VerticalPanel();
 //=========================================================================================		
-	 private DatePicker datePicker = new DatePicker();
+
 	 private CalendarSettings settings = new CalendarSettings();
 	 private DecoratedTabPanel decoratedTabPanel = new DecoratedTabPanel();
 	 private GoogleCalendarPanel googleCalendarPanel = new GoogleCalendarPanel();
@@ -288,11 +295,26 @@ public class Scheduler implements EntryPoint {
 //=========================================================================================		
 		
 		//splitLayoutPanelCal
-	  splitLayoutPanelCal.setSize("80em", "50em");
+		
+		 int newHeight = Window.getClientHeight() -100;
+         int newWidth= Window.getClientWidth() -50 ;
+         
+         splitLayoutPanelCal.setHeight(newHeight + "px");
+         splitLayoutPanelCal.setWidth(newWidth + "px" );
+         
+         splitLayoutPanelGroup.setHeight(newHeight + "px");
+         splitLayoutPanelGroup.setWidth(newWidth + "px" );
+         
+         
+	  //splitLayoutPanelCal.setSize("95em", "55em");
 
 	    // Create a three-item stack, with headers sized in EMs. 
 	   
 	    StackLayoutPanelCal.add(new HTML("this"), new HTML("[Options]"), 4);
+	    
+	    
+
+	    
 	    StackLayoutPanelCal.add(new HTML("that"), new HTML("[View]"), 4);
 	    StackLayoutPanelCal.add(new HTML("the other"), new HTML("[Report]"), 4);
 	    splitLayoutPanelCal.addWest(StackLayoutPanelCal, 100.0);
@@ -300,26 +322,13 @@ public class Scheduler implements EntryPoint {
 		//Assemble  verticalPanelCal  with CalendarPanel.java
 	    splitLayoutPanelCal.add(googleCalendarPanel);
 
-
-		
-		
-		//datePicker
 				
 		//OPTIONS for calendar -change hour offset to false to facilitate iCal style
 		settings.setOffsetHourLabels(false);
 		settings.setTimeBlockClickNumber(Click.Double);
 
-		
-		
-		
-
 //=========================================================================================		!NEW SPLIT PANEL! not ready yet ;)
-		
 
-		
-
-		
-		
 		    // Create a three-item stack, with headers sized in EMs. 
 		   
 		    StackLayoutPanelGroup.add(new HTML("this"), new HTML("[Options]"), 4);
@@ -332,9 +341,8 @@ public class Scheduler implements EntryPoint {
 		   VerticalPanelGroupBottom.add(simplePagerGroup);
 		   VerticalPanelGroupBottom.add(labelGroupSearch);
 		   VerticalPanelGroupBottom.add ( SuggestBoxGroupSearch);
+		   VerticalPanelGroupBottom.add (CustomButtonAddEvent);
 
-		
-		    splitLayoutPanelGroup.setSize("80em", "50em");
 //=========================================================================================	    
 		    
 		//Assemble  verticalPanelGroup with other controls
@@ -622,4 +630,18 @@ public class Scheduler implements EntryPoint {
 		dialogBox.setWidget(dialogVPanel);
 		**/	
 	}	
+	
+    /*private int height = -1;
+    private Timer resizeTimer = new Timer() {
+        @Override
+        public void run() {
+            int newHeight = Window.getClientHeight();
+            int newWidth= Window.getClientWidth();
+       
+            splitLayoutPanelCal.setHeight(newHeight + "px");
+            splitLayoutPanelCal.setWidth(newWidth + "px" );
+             
+            }
+        };*/
+    
 }
