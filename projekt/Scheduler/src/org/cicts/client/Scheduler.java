@@ -135,23 +135,22 @@ public class Scheduler implements EntryPoint {
 	
 	//all  AGENCY grids
 	private Grid gridAgency = new Grid(10, 5);
-	private Grid gridAgencyNumbers  = new Grid(2, 3); 
 
 	//labels AGENCY: name, responsible, country, language, arrival, departure
 	private Label labelAgencyName = new Label("Group name:"); 
 	private DoubleBox longBoxAgencyName = new DoubleBox();
 	
-	private Label labelAgencyResponsible= new InlineLabel("Responsible:"); 
-	private LongBox longBoxAgencyResponsible = new LongBox(); 
+	private Label labelAgencyManager= new InlineLabel("Manager:"); 
+	private LongBox longBoxAgencyManager = new LongBox(); 
 	
-	private Label labelAgencyStaying= new InlineLabel("Israel Staying:"); 
-	private LongBox longBoxAgencyStaying = new LongBox(); 
+	private Label labelAgencyAddress= new InlineLabel("Address:"); 
+	private LongBox longBoxAgencyAddress = new LongBox(); 
 
 	private Label labelAgencyCountry = new InlineLabel("Country:"); 
 	private SuggestBox SuggestBoxAgencyCountry= new SuggestBox(); 
 
-	private Label labelAgencyLanguage = new InlineLabel("Language:"); 
-	private SuggestBox SuggestBoxAgencyLanguage= new SuggestBox(); 
+	private Label labelAgencyCity = new InlineLabel("City/St/Zip:"); 
+	private SuggestBox SuggestBoxAgencyCity= new SuggestBox(); 
 	
 	private HorizontalPanel horizontalPanelAgencyID= new HorizontalPanel(); 
 	private InlineLabel inlineLabelAgencyID = new InlineLabel("ID:"); 
@@ -163,31 +162,22 @@ public class Scheduler implements EntryPoint {
 	private InlineLabel inlineLabelAgencyPhone = new InlineLabel("Phone:"); 
 	private IntegerBox integerBoxAgencyPhone = new IntegerBox();
 	private TextButton textButtonAddAgencyPhone = new TextButton("add more phones"); 
+	
+	private InlineLabel inlineLabelAgencyFax = new InlineLabel("Fax:"); 
+	private IntegerBox integerBoxAgencyFax = new IntegerBox();
+
 
 	//AGENCY : email
 	private InlineLabel inlineLabelAgencyEmail = new InlineLabel("E-mail:"); 
 	private LongBox longBoxAgencyEmail = new LongBox();
 	private TextButton textButtonAddAgencyEmail= new TextButton("add more e-mails");
-	
-	private InlineLabel inlineLabelAgencyChurch = new InlineLabel("Church:"); 
-	private LongBox longBoxAgencyChurch = new LongBox();
-	
-	private InlineLabel inlineLabelAgencyCelebrant= new InlineLabel("Celebrant:");
-	private LongBox longBoxAgencyCelebrant = new LongBox();
 
 	//AGENCY : other contact
-	private Label labelOtherAgencyContact = new Label("Other contact:"); 
-	private TextArea textAreaOtherAgencyContact= new TextArea(); 
+	private Label labelAgencyWeb = new Label("Website:"); 
+	private TextArea textAreaAgencyWeb= new TextArea(); 
 	
 	private Label labelAgencyNotes= new Label("Notes:"); 
 	private TextArea textAreaAgencyNotes = new TextArea(); 
-
-	private	InlineLabel inlineLabelAgencyBishop= new InlineLabel("Bishops:");
-	private	InlineLabel inlineLabelAgencyPriest= new InlineLabel("Priest:"); 
-	private	InlineLabel inlineLabelAgencyParticipants= new InlineLabel("Participants:"); 
-	private	IntegerBox integerBoxAgencyBishop  = new IntegerBox();
-	private	IntegerBox integerBoxAgencyPriest= new IntegerBox(); 
-	private	IntegerBox integerBoxAgencyParticipants = new IntegerBox();
 //=========================================================================================		
 
 	
@@ -441,54 +431,36 @@ public class Scheduler implements EntryPoint {
 			gridAgency.setWidget(0, 0, labelAgencyName);
 			gridAgency.setWidget(0, 1, longBoxAgencyName); 
 			
-			gridAgency.setWidget(3, 0, labelAgencyResponsible);
-			gridAgency.setWidget(3, 1, longBoxAgencyResponsible); 
+			gridAgency.setWidget(1, 0, labelAgencyManager);
+			gridAgency.setWidget(1, 1, longBoxAgencyManager); 
 			
-			gridAgency.setWidget(3, 2, labelAgencyStaying);
-			gridAgency.setWidget(3, 3, longBoxAgencyStaying); 
-			
-			gridAgency.setWidget(4, 0, inlineLabelAgencyChurch );
-			gridAgency.setWidget(4, 1, longBoxAgencyChurch); 
-			
-			gridAgency.setWidget(4, 2, inlineLabelAgencyCelebrant );
-			gridAgency.setWidget(4, 3, longBoxAgencyCelebrant); 
+			gridAgency.setWidget(2, 2, labelAgencyAddress);
+			gridAgency.setWidget(2, 3, longBoxAgencyAddress); 
 
-			gridAgency.setWidget(5, 0, labelAgencyCountry);
-			gridAgency.setWidget(5, 1, SuggestBoxAgencyCountry); 
+			gridAgency.setWidget(3, 0, labelAgencyCountry);
+			gridAgency.setWidget(3, 1, SuggestBoxAgencyCountry); 
 			
-			gridAgency.setWidget(5, 2, labelAgencyLanguage);
-			gridAgency.setWidget(5, 3, SuggestBoxAgencyLanguage); 
-			
-			gridAgency.setWidget(6, 3, gridAgencyNumbers); //no.bishops, priest and participants
+			gridAgency.setWidget(4, 2, labelAgencyCity);
+			gridAgency.setWidget(4, 3, SuggestBoxAgencyCity ); 
 
 			//AGENCY: phone
-			gridAgency.setWidget(7, 0, inlineLabelAgencyPhone);
-			gridAgency.setWidget(7, 1, integerBoxAgencyPhone);
-			gridAgency.setWidget(7, 2, textButtonAddAgencyPhone);
+			gridAgency.setWidget(5, 0, inlineLabelAgencyPhone);
+			gridAgency.setWidget(5, 1, integerBoxAgencyPhone);
+			gridAgency.setWidget(5, 2, textButtonAddAgencyPhone);
+			
+			gridAgency.setWidget(6, 0, inlineLabelAgencyFax);
+			gridAgency.setWidget(6, 1, integerBoxAgencyFax);
 			
 			//AGENCY: email
-			gridAgency.setWidget(8, 0, inlineLabelAgencyEmail );
-			gridAgency.setWidget(8, 1, longBoxAgencyEmail);
-			gridAgency.setWidget(8, 2, textButtonAddAgencyEmail); 
+			gridAgency.setWidget(7, 0, inlineLabelAgencyEmail );
+			gridAgency.setWidget(7, 1, longBoxAgencyEmail);
+			gridAgency.setWidget(7, 2, textButtonAddAgencyEmail); 
 			
-			gridAgency.setWidget(9, 0, labelOtherAgencyContact);
-			gridAgency.setWidget(9, 1, textAreaOtherAgencyContact);
+			gridAgency.setWidget(8, 0, labelAgencyWeb);
+			gridAgency.setWidget(8, 1, textAreaAgencyWeb);
 			
 			gridAgency.setWidget(9, 2, labelAgencyNotes);
 			gridAgency.setWidget(9, 3, textAreaAgencyNotes);
-			
-			//Assemble  gridGroupNumbers with other controls
-			gridAgencyNumbers.setWidget(0, 0, inlineLabelAgencyBishop);
-			gridAgencyNumbers.setWidget(0, 1, inlineLabelAgencyPriest);
-			gridAgencyNumbers.setWidget(0, 2, inlineLabelAgencyParticipants);
-			gridAgencyNumbers.setWidget(1, 0, integerBoxAgencyBishop );
-			gridAgencyNumbers.setWidget(1, 1,integerBoxAgencyPriest);
-			gridAgencyNumbers.setWidget(1, 2, integerBoxAgencyParticipants);
-			
-			//OPTIONS for AGENCY: gridAgencyNumbers
-			integerBoxAgencyBishop.setWidth("30px");
-			integerBoxAgencyPriest.setWidth("30px");
-			integerBoxAgencyParticipants.setWidth("30px");
 			
 			//AGENCY: phone options
 			integerBoxAgencyPhone.setWidth("150px");
