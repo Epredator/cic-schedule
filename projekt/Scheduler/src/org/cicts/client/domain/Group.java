@@ -16,22 +16,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/
  */
 
-package org.cicts.client;
+package org.cicts.client.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.cicts.client.Agency;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.cicts.client.domain.Agency;
 
 /**
- * A simple JavaBean class representing an entity associated to an appointment,
- * most likely a person, but might as well be a resource (like a conference room or a
- * projector).
+ * A simple JavaBean class representing a group,
  */
 @SuppressWarnings("serial")
 public class Group implements Serializable {
+	 @NotNull
+	  @Size(min = 1)
 
    /**
     * The <code>Attendee</code> name (if a person) or description

@@ -1,4 +1,4 @@
-package org.cicts.client;
+package org.cicts.server;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -51,7 +51,7 @@ public class AppointmentBuilder {
      * hours.
      */
     protected static Integer[] DURATIONS =
-            new Integer[]{15, 30, 45, 60, 90, 120, 180, 240};
+            new Integer[]{65,};
     /**
      * The maximum number of appointments to generate per day.
      */

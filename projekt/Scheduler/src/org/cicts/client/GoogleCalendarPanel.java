@@ -3,6 +3,8 @@ package org.cicts.client;
 import java.util.ArrayList;
 import java.util.Date;
 
+import org.cicts.server.AppointmentBuilder;
+
 import com.bradrydzewski.gwt.calendar.client.Appointment;
 import com.bradrydzewski.gwt.calendar.client.AppointmentStyle;
 import com.bradrydzewski.gwt.calendar.client.Calendar;
@@ -51,32 +53,19 @@ import com.google.gwt.user.datepicker.client.DatePicker;
 public class GoogleCalendarPanel extends FlowPanel {
 
     private Calendar calendar = null;
-
-    
-	 private DatePicker datePicker = new DatePicker();
+	private DatePicker datePicker = new DatePicker();
     private AbsolutePanel leftPanel = new AbsolutePanel();
     private DecoratorPanel datePickerDecorator = new DecoratorPanel();
-    
-    
-    
     private FlexTable layoutTable = new FlexTable();
-   
     private AbsolutePanel topPanel = new AbsolutePanel();
     private DecoratorPanel dayViewDecorator = new DecoratorPanel();
     private DecoratedTabBar calendarViewsTabBar = new DecoratedTabBar();
-    
     private Button todayButton = new Button();
 	private Button nextDayButton = new Button();
 	private Button previousDayButton = new Button();
-    
-    
-    
-
     private CalendarSettings settings = new CalendarSettings();
-
+    
     public GoogleCalendarPanel() {
-    	
-    	
     	//add today button
 		todayButton.setStyleName("todayButton");
 		todayButton.setText("Today");
@@ -106,12 +95,12 @@ public class GoogleCalendarPanel extends FlowPanel {
 		});
     	
 
-/**
+
         // style this element as absolute position
         DOM.setStyleAttribute(this.getElement(), "position", "absolute");
         DOM.setStyleAttribute(this.getElement(), "top", "1px");
         DOM.setStyleAttribute(this.getElement(), "left", "0px");
-**/
+
         configureCalendar();
         configureViewsTabBar();
 
@@ -176,7 +165,7 @@ public class GoogleCalendarPanel extends FlowPanel {
         Window.addResizeHandler(new ResizeHandler() {
             @Override
             public void onResize(ResizeEvent event) {
-                resizeTimer.schedule(500);
+               // resizeTimer.schedule(500);
                 int h = event.getHeight();
             }
         });
@@ -186,7 +175,7 @@ public class GoogleCalendarPanel extends FlowPanel {
               calendar.setHeight(Window.getClientHeight() + "px");
             }
         });
-       // DOM.setStyleAttribute(getElement(), "padding", "10px");
+        DOM.setStyleAttribute(getElement(), "padding", "10px");
     }
 
     /**
@@ -268,7 +257,7 @@ public class GoogleCalendarPanel extends FlowPanel {
 
         ArrayList<Appointment> appts = AppointmentBuilder.build();
         calendar.suspendLayout();
-        calendar.addAppointments(appts);
+       // calendar.addAppointments(appts);
         /* 
         // Create a couple of multi day appointments for demoing purposes...
         Date today = new Date();
@@ -329,7 +318,7 @@ public class GoogleCalendarPanel extends FlowPanel {
         calendarViewsTabBar.addTab("3 Day");
         calendarViewsTabBar.addTab("Work Week");
         calendarViewsTabBar.addTab("Week");
-        calendarViewsTabBar.addTab("Agenda");
+      //  calendarViewsTabBar.addTab("Agenda");
         calendarViewsTabBar.addTab("Month");
         calendarViewsTabBar.selectTab(1);
         calendarViewsTabBar
