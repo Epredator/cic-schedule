@@ -10,3 +10,39 @@ Command-line arguments:  -data /home/adas/at/projekt -os linux -ws gtk -arch x86
 
 !ENTRY com.google.gdt.eclipse.suite 1 0 2012-04-25 16:16:11.813
 !MESSAGE Registering: com.google.gwt.eclipse.sdkbundle_2.4.0.v201203300216-rel-r37
+!SESSION 2012-07-20 20:49:25.428 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Command-line arguments:  -data /home/adas/at/projekt/Scheduler -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2012-07-20 20:49:52.216
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2012-07-20 21:00:18.609 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Command-line arguments:  -data /home/adas/at/projekt/Scheduler -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2012-07-20 21:06:27.194
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2012-07-20 21:06:30.633 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2012-07-20 21:07:17.751
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2012-07-20 21:08:12.849 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Command-line arguments:  -data /home/adas/at/projekt/Scheduler -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2012-07-20 21:09:31.297
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)

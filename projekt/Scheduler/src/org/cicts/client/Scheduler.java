@@ -1,18 +1,12 @@
 package org.cicts.client;
 
-
 import com.bradrydzewski.gwt.calendar.client.CalendarSettings;
 import com.bradrydzewski.gwt.calendar.client.CalendarSettings.Click;
 import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.user.cellview.client.SimplePager;
-import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.CaptionPanel;
-import com.google.gwt.user.client.ui.CustomButton;
 import com.google.gwt.user.client.ui.DecoratedTabPanel;
-import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.DoubleBox;
 import com.google.gwt.user.client.ui.Grid;
@@ -24,11 +18,8 @@ import com.google.gwt.user.client.ui.InlineLabel;
 import com.google.gwt.user.client.ui.IntegerBox;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.LongBox;
-import com.google.gwt.user.client.ui.PushButton;
 import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.SplitLayoutPanel;
-import com.google.gwt.user.client.ui.StackLayoutPanel;
 import com.google.gwt.user.client.ui.SuggestBox;
 import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.ValueBoxBase.TextAlignment;
@@ -42,37 +33,19 @@ import com.google.gwt.widget.client.TextButton;
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class Scheduler implements EntryPoint {
-	
-	
-	
-	private CustomButton CustomButtonAddEvent= new CustomButton() {
-		java.lang.String upText;
-        java.lang.String downText;
-	};
-
 	//all tabs
 	private VerticalPanel verticalPanelCal = new VerticalPanel();
+	private VerticalPanel verticalPanelGroup = new VerticalPanel();
 	private VerticalPanel verticalPanelAgency = new VerticalPanel();
 	private VerticalPanel verticalPanelPOP = new VerticalPanel();
 	private VerticalPanel verticalPanelReport = new VerticalPanel();
 //=========================================================================================		
-
+	 private DatePicker datePicker = new DatePicker();
 	 private CalendarSettings settings = new CalendarSettings();
 	 private DecoratedTabPanel decoratedTabPanel = new DecoratedTabPanel();
 	 private GoogleCalendarPanel googleCalendarPanel = new GoogleCalendarPanel();
-	 
-		private StackLayoutPanel StackLayoutPanelCal = new StackLayoutPanel(Unit.EM);
-		private SplitLayoutPanel splitLayoutPanelCal= new SplitLayoutPanel();
 //=========================================================================================		
-		
-		private StackLayoutPanel StackLayoutPanelGroup = new StackLayoutPanel(Unit.EM);
-		private SplitLayoutPanel splitLayoutPanelGroup = new SplitLayoutPanel();
-		
-		private VerticalPanel  VerticalPanelGroupBottom  = new VerticalPanel();
-		private  Label labelGroupSearch = new Label("SEARCH:"); 
-		private SuggestBox SuggestBoxGroupSearch= new SuggestBox(); 
-		private  Label labelGroupHello = new Label("Hello User!"); 
-	
+	private DockPanel dockPanelGroup = new DockPanel(); 
 	
 	//all  GROUP grids
 	private Grid gridGroup = new Grid(10, 5);
@@ -134,35 +107,28 @@ public class Scheduler implements EntryPoint {
 	private	IntegerBox integerBoxBishop  = new IntegerBox();
 	private	IntegerBox integerBoxPriest = new IntegerBox(); 
 	private	IntegerBox integerBoxParticipants  = new IntegerBox();
-//=========================================================================================	
-	
-	private StackLayoutPanel StackLayoutPanelAgency = new StackLayoutPanel(Unit.EM);
-	private SplitLayoutPanel splitLayoutPanelAgency = new SplitLayoutPanel();
-	
-	private VerticalPanel  VerticalPanelAgencyBottom  = new VerticalPanel();
-	private  Label labelAgencySearch = new Label("SEARCH:"); 
-	private SuggestBox SuggestBoxAgencySearch= new SuggestBox(); 
-	private  Label labelAgencyHello = new Label("Hello User!"); 
-
+//=========================================================================================		
+	private DockPanel dockPanelAgency = new DockPanel(); 
 	
 	//all  AGENCY grids
 	private Grid gridAgency = new Grid(10, 5);
+	private Grid gridAgencyNumbers  = new Grid(2, 3); 
 
 	//labels AGENCY: name, responsible, country, language, arrival, departure
 	private Label labelAgencyName = new Label("Group name:"); 
 	private DoubleBox longBoxAgencyName = new DoubleBox();
 	
-	private Label labelAgencyManager= new InlineLabel("Manager:"); 
-	private LongBox longBoxAgencyManager = new LongBox(); 
+	private Label labelAgencyResponsible= new InlineLabel("Responsible:"); 
+	private LongBox longBoxAgencyResponsible = new LongBox(); 
 	
-	private Label labelAgencyAddress= new InlineLabel("Address:"); 
-	private LongBox longBoxAgencyAddress = new LongBox(); 
+	private Label labelAgencyStaying= new InlineLabel("Israel Staying:"); 
+	private LongBox longBoxAgencyStaying = new LongBox(); 
 
 	private Label labelAgencyCountry = new InlineLabel("Country:"); 
 	private SuggestBox SuggestBoxAgencyCountry= new SuggestBox(); 
 
-	private Label labelAgencyCity = new InlineLabel("City/St/Zip:"); 
-	private SuggestBox SuggestBoxAgencyCity= new SuggestBox(); 
+	private Label labelAgencyLanguage = new InlineLabel("Language:"); 
+	private SuggestBox SuggestBoxAgencyLanguage= new SuggestBox(); 
 	
 	private HorizontalPanel horizontalPanelAgencyID= new HorizontalPanel(); 
 	private InlineLabel inlineLabelAgencyID = new InlineLabel("ID:"); 
@@ -174,30 +140,33 @@ public class Scheduler implements EntryPoint {
 	private InlineLabel inlineLabelAgencyPhone = new InlineLabel("Phone:"); 
 	private IntegerBox integerBoxAgencyPhone = new IntegerBox();
 	private TextButton textButtonAddAgencyPhone = new TextButton("add more phones"); 
-	
-	private InlineLabel inlineLabelAgencyFax = new InlineLabel("Fax:"); 
-	private IntegerBox integerBoxAgencyFax = new IntegerBox();
-
 
 	//AGENCY : email
 	private InlineLabel inlineLabelAgencyEmail = new InlineLabel("E-mail:"); 
 	private LongBox longBoxAgencyEmail = new LongBox();
 	private TextButton textButtonAddAgencyEmail= new TextButton("add more e-mails");
+	
+	private InlineLabel inlineLabelAgencyChurch = new InlineLabel("Church:"); 
+	private LongBox longBoxAgencyChurch = new LongBox();
+	
+	private InlineLabel inlineLabelAgencyCelebrant= new InlineLabel("Celebrant:");
+	private LongBox longBoxAgencyCelebrant = new LongBox();
 
 	//AGENCY : other contact
-	private Label labelAgencyWeb = new Label("Website:"); 
-	private TextArea textAreaAgencyWeb= new TextArea(); 
+	private Label labelOtherAgencyContact = new Label("Other contact:"); 
+	private TextArea textAreaOtherAgencyContact= new TextArea(); 
 	
 	private Label labelAgencyNotes= new Label("Notes:"); 
 	private TextArea textAreaAgencyNotes = new TextArea(); 
+
+	private	InlineLabel inlineLabelAgencyBishop= new InlineLabel("Bishops:");
+	private	InlineLabel inlineLabelAgencyPriest= new InlineLabel("Priest:"); 
+	private	InlineLabel inlineLabelAgencyParticipants= new InlineLabel("Participants:"); 
+	private	IntegerBox integerBoxAgencyBishop  = new IntegerBox();
+	private	IntegerBox integerBoxAgencyPriest= new IntegerBox(); 
+	private	IntegerBox integerBoxAgencyParticipants = new IntegerBox();
 //=========================================================================================		
-	private StackLayoutPanel StackLayoutPanelPOP = new StackLayoutPanel(Unit.EM);
-	private SplitLayoutPanel splitLayoutPanelPOP = new SplitLayoutPanel();
-	
-	private VerticalPanel  VerticalPanelPOPBottom  = new VerticalPanel();
-	private  Label labelPOPSearch = new Label("SEARCH:"); 
-	private SuggestBox SuggestBoxPOPSearch= new SuggestBox(); 
-	private  Label labelPOPHello = new Label("Hello User!"); 
+	private DockPanel dockPanelPOP= new DockPanel(); 
 	
 	//all  POP grids
 	private Grid gridPOP = new Grid(10, 5);
@@ -252,17 +221,6 @@ public class Scheduler implements EntryPoint {
 	private	IntegerBox integerBoxPOPPriest= new IntegerBox(); 
 	private	IntegerBox integerBoxPOPParticipants = new IntegerBox();
 //=========================================================================================		
-	
-	
-	private StackLayoutPanel StackLayoutPanelReport = new StackLayoutPanel(Unit.EM);
-	private SplitLayoutPanel splitLayoutPanelReport = new SplitLayoutPanel();
-	
-	private VerticalPanel  VerticalPanelReportBottom  = new VerticalPanel();
-	private  Label labelReportSearch = new Label("SEARCH:"); 
-	private SuggestBox SuggestBoxReportSearch= new SuggestBox(); 
-	private  Label labelReportHello = new Label("Hello User!"); 
-	
-	
 	private CaptionPanel cptnpnlReportGroups = new CaptionPanel("Groups:");
 	private CaptionPanel cptnpnlReportAgency = new CaptionPanel("Agencies:");
 	private CaptionPanel cptnpnlReportPOPShrine = new CaptionPanel("POP's -Shrines:");
@@ -294,81 +252,39 @@ public class Scheduler implements EntryPoint {
 	/**
 	 * This is the entry point method.
 	 */
-
 	public void onModuleLoad() {
 		// Use RootPanel.get() to get the entire body element
 		RootPanel.get("nameFieldContainer").add(decoratedTabPanel);
 		
-
 		
- //=========================================================================================		
+		
 		//Assemble  decoratedTabPanel (root Panel) with all tabs
-		decoratedTabPanel.add(splitLayoutPanelCal, "Calendar", true);
-		decoratedTabPanel.add(splitLayoutPanelGroup, "Group", true);
-		decoratedTabPanel.add(splitLayoutPanelAgency, "Agencies", true);
-		decoratedTabPanel.add(splitLayoutPanelPOP, "POP's:", true);
-		decoratedTabPanel.add(splitLayoutPanelReport, "Reports", true);
-//=========================================================================================		
-		
-		//splitLayoutPanelCal
-		
-		 int newHeight = Window.getClientHeight() -100;
-         int newWidth= Window.getClientWidth() -50 ;
-         
-         splitLayoutPanelCal.setHeight(newHeight + "px");
-         splitLayoutPanelCal.setWidth(newWidth + "px" );
-         
-         splitLayoutPanelGroup.setHeight(newHeight + "px");
-         splitLayoutPanelGroup.setWidth(newWidth + "px" );
-         
-         splitLayoutPanelAgency.setHeight(newHeight + "px");
-         splitLayoutPanelAgency.setWidth(newWidth + "px" );
-         
-         splitLayoutPanelPOP.setHeight(newHeight + "px");
-         splitLayoutPanelPOP.setWidth(newWidth + "px" );
-         
-         splitLayoutPanelReport.setHeight(newHeight + "px");
-         splitLayoutPanelReport.setWidth(newWidth + "px" );
-         
-	  //splitLayoutPanelCal.setSize("95em", "55em");
-	    // Create a three-item stack, with headers sized in EMs. 
-	   
-	    StackLayoutPanelCal.add(new HTML("this"), new HTML("[Options]"), 4);
-	    StackLayoutPanelCal.add(new HTML("that"), new HTML("[View]"), 4);
-	    StackLayoutPanelCal.add(new HTML("the other"), new HTML("[Report]"), 4);
-	    splitLayoutPanelCal.addWest(StackLayoutPanelCal, 100.0);
+		decoratedTabPanel.add(verticalPanelCal, "Calendar1", true);
+		decoratedTabPanel.add(verticalPanelGroup, "Group1", true);
+		decoratedTabPanel.add(verticalPanelAgency, "Agencies1", true);
+		decoratedTabPanel.add(verticalPanelPOP, "POP's1:", true);
+		decoratedTabPanel.add(verticalPanelReport, "Reports1", true);
 		
 		//Assemble  verticalPanelCal  with CalendarPanel.java
-	    splitLayoutPanelCal.add(googleCalendarPanel);
-
+		verticalPanelCal.add(googleCalendarPanel);
+		//verticalPanelCal.setSize("50%", "50%");  //bad idea to uncomment it ;)
 				
 		//OPTIONS for calendar -change hour offset to false to facilitate iCal style
 		settings.setOffsetHourLabels(false);
 		settings.setTimeBlockClickNumber(Click.Double);
+//=========================================================================================	
+		//Assemble  verticalPanelGroup with  dockPanelGroup 
+		verticalPanelGroup.add(dockPanelGroup);
+		
+	//	dockPanelGroup.add(dateBoxArrival);
+		dockPanelGroup.add (gridGroup , DockPanel.CENTER);
 
-//=========================================================================================		split panel group not ready yet ;)
-
-		    // Create a three-item stack, with headers sized in EMs. 
-		   
-		    StackLayoutPanelGroup.add(new HTML("this"), new HTML("[Options]"), 4);
-		    StackLayoutPanelGroup.add(new HTML("that"), new HTML("[View]"), 4);
-		    StackLayoutPanelGroup.add(new HTML("the other"), new HTML("[Report]"), 4);
-		    splitLayoutPanelGroup.addWest(StackLayoutPanelGroup, 100.0);
-		   splitLayoutPanelGroup.addSouth(VerticalPanelGroupBottom, 100.0);
-		   
-		   
-		   VerticalPanelGroupBottom.add(simplePagerGroup);
-		   VerticalPanelGroupBottom.add(labelGroupSearch);
-		   VerticalPanelGroupBottom.add ( SuggestBoxGroupSearch);
-		   VerticalPanelGroupBottom.add (CustomButtonAddEvent);
-
-//=========================================================================================	      
+		
 		//Assemble  verticalPanelGroup with other controls
 		//verticalPanelGroup.add(gridGroup);
-		 splitLayoutPanelGroup.add(gridGroup);
-
-		 gridGroup.setWidget(0, 2, horizontalPanelID);
-		 gridGroup.setWidget(0, 2, horizontalPanelID);
+		
+		gridGroup.setWidget(0, 3, simplePagerGroup);
+		gridGroup.setWidget(0, 2, horizontalPanelID);
 		
 		horizontalPanelID.add(inlineLabelID);
 		horizontalPanelID.add(integerBoxID);
@@ -437,61 +353,74 @@ public class Scheduler implements EntryPoint {
 		//GROUP: email options
 		longBoxEmail.setSize("150px", "16px");
 		textButtonAddEmail.setSize("70px", "45px");
-		//=========================================================================================		split panel group not ready yet ;)
-
-	    // Create a three-item stack, with headers sized in EMs. 
-	   
-	    StackLayoutPanelAgency.add(new HTML("this"), new HTML("[Options]"), 4);
-	    StackLayoutPanelAgency.add(new HTML("that"), new HTML("[View]"), 4);
-	    StackLayoutPanelAgency.add(new HTML("the other"), new HTML("[Report]"), 4);
-	    splitLayoutPanelAgency.addWest(StackLayoutPanelAgency, 100.0);
-	   splitLayoutPanelAgency.addSouth(VerticalPanelAgencyBottom, 100.0);
-	   
-	   
-	   VerticalPanelAgencyBottom.add(simplePagerAgency);
-	   VerticalPanelAgencyBottom.add(labelAgencySearch);
-	   VerticalPanelAgencyBottom.add ( SuggestBoxAgencySearch);
-	   VerticalPanelAgencyBottom.add (CustomButtonAddEvent);
-
-//=========================================================================================	    
-	//Assemble  verticalPanelAgency with other controls
-	//verticalPanelGroup.add(gridGroup);
-	 splitLayoutPanelAgency.add(gridAgency);
+//=========================================================================================	
+		//Assemble  verticalPanelAgency with other controls
+			verticalPanelAgency.add(gridAgency);
+			
+			//Assemble  verticalPanelAgency with  dockPanelAgency
+			//verticalPanelGroup.add(dockPanelGroup);
+			
+			//Assemble  verticalPanelAgency with other controls
+			verticalPanelAgency.add(gridAgency);
+			
+			gridAgency.setWidget(0, 3, simplePagerAgency);
+			gridAgency.setWidget(0, 2, horizontalPanelAgencyID);
+			
+			horizontalPanelAgencyID.add(inlineLabelAgencyID);
+			horizontalPanelAgencyID.add(integerBoxAgencyID);
 			
 			//labels GroupName, arrival, departure Responsible, Phone+ , email+, country, language church, celebrant, israel staying, notes etc...
 			gridAgency.setWidget(0, 0, labelAgencyName);
 			gridAgency.setWidget(0, 1, longBoxAgencyName); 
 			
-			gridAgency.setWidget(1, 0, labelAgencyManager);
-			gridAgency.setWidget(1, 1, longBoxAgencyManager); 
+			gridAgency.setWidget(3, 0, labelAgencyResponsible);
+			gridAgency.setWidget(3, 1, longBoxAgencyResponsible); 
 			
-			gridAgency.setWidget(2, 2, labelAgencyAddress);
-			gridAgency.setWidget(2, 3, longBoxAgencyAddress); 
+			gridAgency.setWidget(3, 2, labelAgencyStaying);
+			gridAgency.setWidget(3, 3, longBoxAgencyStaying); 
+			
+			gridAgency.setWidget(4, 0, inlineLabelAgencyChurch );
+			gridAgency.setWidget(4, 1, longBoxAgencyChurch); 
+			
+			gridAgency.setWidget(4, 2, inlineLabelAgencyCelebrant );
+			gridAgency.setWidget(4, 3, longBoxAgencyCelebrant); 
 
-			gridAgency.setWidget(3, 0, labelAgencyCountry);
-			gridAgency.setWidget(3, 1, SuggestBoxAgencyCountry); 
+			gridAgency.setWidget(5, 0, labelAgencyCountry);
+			gridAgency.setWidget(5, 1, SuggestBoxAgencyCountry); 
 			
-			gridAgency.setWidget(4, 2, labelAgencyCity);
-			gridAgency.setWidget(4, 3, SuggestBoxAgencyCity ); 
+			gridAgency.setWidget(5, 2, labelAgencyLanguage);
+			gridAgency.setWidget(5, 3, SuggestBoxAgencyLanguage); 
+			
+			gridAgency.setWidget(6, 3, gridAgencyNumbers); //no.bishops, priest and participants
 
 			//AGENCY: phone
-			gridAgency.setWidget(5, 0, inlineLabelAgencyPhone);
-			gridAgency.setWidget(5, 1, integerBoxAgencyPhone);
-			gridAgency.setWidget(5, 2, textButtonAddAgencyPhone);
-			
-			gridAgency.setWidget(6, 0, inlineLabelAgencyFax);
-			gridAgency.setWidget(6, 1, integerBoxAgencyFax);
+			gridAgency.setWidget(7, 0, inlineLabelAgencyPhone);
+			gridAgency.setWidget(7, 1, integerBoxAgencyPhone);
+			gridAgency.setWidget(7, 2, textButtonAddAgencyPhone);
 			
 			//AGENCY: email
-			gridAgency.setWidget(7, 0, inlineLabelAgencyEmail );
-			gridAgency.setWidget(7, 1, longBoxAgencyEmail);
-			gridAgency.setWidget(7, 2, textButtonAddAgencyEmail); 
+			gridAgency.setWidget(8, 0, inlineLabelAgencyEmail );
+			gridAgency.setWidget(8, 1, longBoxAgencyEmail);
+			gridAgency.setWidget(8, 2, textButtonAddAgencyEmail); 
 			
-			gridAgency.setWidget(8, 0, labelAgencyWeb);
-			gridAgency.setWidget(8, 1, textAreaAgencyWeb);
+			gridAgency.setWidget(9, 0, labelOtherAgencyContact);
+			gridAgency.setWidget(9, 1, textAreaOtherAgencyContact);
 			
 			gridAgency.setWidget(9, 2, labelAgencyNotes);
 			gridAgency.setWidget(9, 3, textAreaAgencyNotes);
+			
+			//Assemble  gridGroupNumbers with other controls
+			gridAgencyNumbers.setWidget(0, 0, inlineLabelAgencyBishop);
+			gridAgencyNumbers.setWidget(0, 1, inlineLabelAgencyPriest);
+			gridAgencyNumbers.setWidget(0, 2, inlineLabelAgencyParticipants);
+			gridAgencyNumbers.setWidget(1, 0, integerBoxAgencyBishop );
+			gridAgencyNumbers.setWidget(1, 1,integerBoxAgencyPriest);
+			gridAgencyNumbers.setWidget(1, 2, integerBoxAgencyParticipants);
+			
+			//OPTIONS for AGENCY: gridAgencyNumbers
+			integerBoxAgencyBishop.setWidth("30px");
+			integerBoxAgencyPriest.setWidth("30px");
+			integerBoxAgencyParticipants.setWidth("30px");
 			
 			//AGENCY: phone options
 			integerBoxAgencyPhone.setWidth("150px");
@@ -499,26 +428,19 @@ public class Scheduler implements EntryPoint {
 			//AGENCY: email options
 			longBoxAgencyEmail.setSize("150px", "16px");
 			textButtonAddAgencyEmail.setSize("70px", "45px");
-//=========================================================================================		split panel group not ready yet ;)
-		    // Create a three-item stack, with headers sized in EMs. 
-		   
-		    StackLayoutPanelPOP.add(new HTML("this"), new HTML("[Options]"), 4);
-		    StackLayoutPanelPOP.add(new HTML("that"), new HTML("[View]"), 4);
-		    StackLayoutPanelPOP.add(new HTML("the other"), new HTML("[Report]"), 4);
-		    splitLayoutPanelPOP.addWest(StackLayoutPanelPOP, 100.0);
-		   splitLayoutPanelPOP.addSouth(VerticalPanelPOPBottom, 100.0);
-		   
-		   
-		   VerticalPanelPOPBottom.add(simplePagerPOP);
-		   VerticalPanelPOPBottom.add(labelPOPSearch);
-		   VerticalPanelPOPBottom.add ( SuggestBoxPOPSearch);
-		   VerticalPanelPOPBottom.add (CustomButtonAddEvent);
-
-	//=========================================================================================	    
-		//Assemble  verticalPanelAgency with other controls
-		//verticalPanelGroup.add(gridPOP);
-		 splitLayoutPanelPOP.add(gridPOP);
-
+//=========================================================================================			
+			//Assemble  verticalPanelPOP with other controls
+			verticalPanelPOP.add(gridPOP);
+			
+			//Assemble  verticalPanelAgency with  dockPanelAgency
+			verticalPanelGroup.add(dockPanelGroup);
+			
+			//Assemble  verticalPanelAgency with other controls
+			dockPanelGroup.add(gridGroup);
+			
+			
+			
+			
 			gridPOP.setWidget(0, 3, simplePagerPOP);
 			gridPOP.setWidget(0, 2, horizontalPanelPOPID);
 			
@@ -582,10 +504,7 @@ public class Scheduler implements EntryPoint {
 			longBoxPOPEmail.setSize("150px", "16px");
 			textButtonAddPOPEmail.setSize("70px", "45px");
 
-//=========================================================================================		
-			
-			//verticalPanelGroup.add(gridGroup);
-			 splitLayoutPanelReport.add(verticalPanelReport);
+//=========================================================================================			
 			//Assemble verticalPanelReport with gridReport and so on
 			verticalPanelReport.add(cptnpnlReportGroups );
 			verticalPanelReport.add(cptnpnlReportAgency);
@@ -624,9 +543,6 @@ public class Scheduler implements EntryPoint {
 			gridReportPOPShrine .setSize("500px", "33px");
 			gridReportAccounting.setSize("500px", "33px");
 			
-			
-			
-			
 		/*** Create the popup dialog box domyslna aplikacja
 		final DialogBox dialogBox = new DialogBox();
 		dialogBox.setText("Remote Procedure Call");
@@ -647,18 +563,4 @@ public class Scheduler implements EntryPoint {
 		dialogBox.setWidget(dialogVPanel);
 		**/	
 	}	
-	
-    /*private int height = -1;
-    private Timer resizeTimer = new Timer() {
-        @Override
-        public void run() {
-            int newHeight = Window.getClientHeight();
-            int newWidth= Window.getClientWidth();
-       
-            splitLayoutPanelCal.setHeight(newHeight + "px");
-            splitLayoutPanelCal.setWidth(newWidth + "px" );
-             
-            }
-        };*/
-    
 }
