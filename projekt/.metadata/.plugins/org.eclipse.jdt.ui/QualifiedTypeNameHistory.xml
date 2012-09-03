@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.google.gwt.event.logical.shared.OpenEvent"/>
+<fullyQualifiedTypeName name="com.bradrydzewski.gwt.calendar.client.Appointment"/>
+<fullyQualifiedTypeName name="org.cicts.data.GroupManager"/>
+<fullyQualifiedTypeName name="org.cicts.data.GroupSerializable"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Grid"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.vaadin.ui.Button.ClickEvent"/>
+</qualifiedTypeNameHistroy>

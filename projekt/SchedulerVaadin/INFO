@@ -1,0 +1,8 @@
+do folderu GWT wstawic pliki .jar: 
+gwt-dev
+gwt-user
+validation-api-1.0.0.GA
+validation-api-1.0.0.GA-sources
+
+
+
