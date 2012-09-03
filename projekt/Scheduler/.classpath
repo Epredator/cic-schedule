@@ -2,13 +2,14 @@
 <classpath>
 	<classpathentry exported="true" kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/validation-api-1.0.0.GA.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="/home/adas/at/projekt/Scheduler/gwt-2.4.0/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="/home/adas/at/projekt/Scheduler/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry exported="true" kind="lib" path="/home/adas/nauczanie/wsksim/sem/at/projekt/jar/gwt-cal-0.9.3-dndCreation-SNAPSHOT.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/adas/nauczanie/wsksim/sem/at/projekt/jar/gwt-dnd-3.1.2.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-user.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-dev.jar"/>
+	<classpathentry kind="lib" path="/home/adas/at/projekt/Scheduler/gwt-2.4.0/gwt-user.jar"/>
+	<classpathentry kind="lib" path="/home/adas/at/projekt/Scheduler/gwt-2.4.0/gwt-dev.jar"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

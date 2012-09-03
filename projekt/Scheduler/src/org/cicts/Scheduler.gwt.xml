@@ -15,6 +15,7 @@
  <inherits name='com.bradrydzewski.gwt.calendar.Calendar' />
   <inherits name='com.bradrydzewski.gwt.calendar.theme.google.Google' />
   
+  
 
   <!-- Specify the app entry point class.                         -->
   <entry-point class='org.cicts.client.Scheduler'/>
@@ -22,5 +23,8 @@
   <!-- Specify the paths for translatable code                    -->
   <source path='client'/>
   <source path='shared'/>
+  <stylesheet src="js/ext/resources/css/ext-all.css"/>
+  <script src="js/ext/adapter/ext/ext-base.js"/>
+  <script src="js/ext/ext-all.js"/>
 
 </module>
