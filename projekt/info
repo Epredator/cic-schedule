@@ -9,14 +9,49 @@ java -jar target/dependency/webapp-runner.jar target/*.war
 Jeśli port nie jest zajęty aplikacja powinna się uruchomić pod adresem: http://localhost:8080/schedule
 Dodatkowo mamy opcje wysłania na heroku.com (info jak to zrobić)
 
+
+//-------------------------------------------------------------------------------------------------------------------------
 SchedulerMav - skonfigurowany do odpalenia lokalnie na serwerze Jetty
 cd schedule
 mvn package
 mvn jetty: run -e
 Jeśli port nie jest zajęty aplikacja powinna się uruchomić pod adresem: http://localhost:8080/schedule
 
+Opcje:
+
+Jeżeli chcemy wybrać inny port wpisujemy w terminalu:
+export MAVEN_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=1080,server=y,suspend=n"
+mvn jetty:run
+
+(porty 22 oraz 80 nie mogą być zajęte przez serwer Jetty,  wpisałem w pole address: "1080" następnie w przeglądarce http://localhost:8080/ i działa, logiki w tym nie widzę na razie ale chodzi ;)
+
+
+
+Aby sprawdzić jakie mamy otwarte porty możemy wpisać np. nmap -v -A scanme.nmap.org
+
+//-------------------------------------------------------------------------------------------------------------------------
+
 Oba foldery zawierają w zasadzie to samo różnica jest tylko w plikach pom.xml i w wygenerowanych folderach target.
 
+//-------------------------------------------------------------------------------------------------------------------------
+Jeszcze sprawdzam na "łysym" Debianie odpalanie aplikacji i tutaj trzeba najpierw ściągnąć jeżeli nie JDK a następnie zdefiniować ją w zmiennych i tak:
 
-pozdrawiam!
+Krok 1: Instalacja JDK 1.7
+*Ściągamy osatnie wydanie JDK pod nasz system ze strony http://www.oracle.com/technetwork/java/javase/downloads/index.html
+*Tworzymy nowy folder /usr/java: # mkdir /usr/java   
+*Przechodzimy do tego folderu: # cd /usr/java  
+*Wypakowujemy paczke JDK, którą ściągneliśmy do folderu: # tar -xzf jdk-7u5-linux-x64.tar.gz  
+*Po wypakowaniu mamy utowrzony folder   /usr/java/jdk1.7.0_05
+*Ustawiamy zmienną JAVA_HOME:
+  # JAVA_HOME=/usr/java/jdk1.7.0_05 
+  # export JAVA_HOME 
+  # PATH=$JAVA_HOME/bin:$PATH  
+  # export PATH  
+
+Aby sprawdzić jaką mamy zmienną JAVA_HOME wpisujemy:  # echo $JAVA_HOME
+
+
+
+
+może jeszcze nie kompilować ale niektóre problemy powyższy tekst rozwiązuje, pozdrawiam!
 Adam Trojnar
