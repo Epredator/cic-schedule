@@ -1,0 +1,8 @@
+09-05 18:28:20 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tablela "PERSON" nie istnieje
+Table "PERSON" not found; SQL statement:
+ALTER TABLE PERSON DROP CONSTRAINT FK_PERSON_BOSS_ID [42102-160]
+09-05 18:28:20 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tablela "PERSON" nie istnieje
+Table "PERSON" not found; SQL statement:
+DROP TABLE PERSON [42102-160]
