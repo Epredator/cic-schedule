@@ -16,11 +16,7 @@
 		<gwt.plugin.version>2.3.0-1</gwt.plugin.version>
 	</properties>
 	<repositories>
-<dependency>
-   <groupId>org.vaadin.addons</groupId>
-   <artifactId>vaadin-calendar-agpl-3.0</artifactId>
-   <version>1.2.1</version>
-</dependency>
+
 
 <repository>
    <id>vaadin-addons</id>
@@ -46,6 +42,11 @@
 		</repository>
 	</repositories>
 	<dependencies>
+<dependency>
+   <groupId>org.vaadin.addons</groupId>
+   <artifactId>vaadin-calendar-agpl-3.0</artifactId>
+   <version>1.2.1</version>
+</dependency>
 		<dependency>
 			<groupId>com.vaadin.addon</groupId>
 			<artifactId>jpacontainer-addon-agpl-3.0</artifactId>

@@ -1,0 +1,22 @@
+Mamy 3 foldery: 
+
+Scheduler -stara aplikacja pod GWT
+
+SchedulerMavHeroku  -do odpalenia w Tomcat
+Wpisujemy w terminalu:
+mvn package
+java -jar target/dependency/webapp-runner.jar target/*.war
+Jeśli port nie jest zajęty aplikacja powinna się uruchomić pod adresem: http://localhost:8080/schedule
+Dodatkowo mamy opcje wysłania na heroku.com (info jak to zrobić)
+
+SchedulerMav - skonfigurowany do odpalenia lokalnie na serwerze Jetty
+cd schedule
+mvn package
+mvn jetty: run -e
+Jeśli port nie jest zajęty aplikacja powinna się uruchomić pod adresem: http://localhost:8080/schedule
+
+Oba foldery zawierają w zasadzie to samo różnica jest tylko w plikach pom.xml i w wygenerowanych folderach target.
+
+
+pozdrawiam!
+Adam Trojnar
