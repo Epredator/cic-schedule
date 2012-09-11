@@ -32,6 +32,10 @@ import com.vaadin.ui.themes.Reindeer;
 public class BasicCrudView<T> extends AbsoluteLayout implements
 		Property.ValueChangeListener, Handler, ClickListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPAContainer<T> container;
 	private Table table;
 	private Form form;
@@ -113,6 +117,11 @@ public class BasicCrudView<T> extends AbsoluteLayout implements
 		form.setCaption(getEntityClass().getSimpleName());
 		form.setFormFieldFactory(fieldFactory);
 		commit = new Button("Save", new Button.ClickListener() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
 			@Override
 			public void buttonClick(ClickEvent event) {
 				form.commit();
@@ -121,6 +130,11 @@ public class BasicCrudView<T> extends AbsoluteLayout implements
 		commit.setStyleName(Reindeer.BUTTON_DEFAULT);
 
 		discard = new Button("Cancel", new Button.ClickListener() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
 			@Override
 			public void buttonClick(ClickEvent event) {
 				form.discard();

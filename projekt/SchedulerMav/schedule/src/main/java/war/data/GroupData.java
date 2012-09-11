@@ -2,7 +2,7 @@ package war.data;
 
 import java.util.Date;
 
-import com.vaadin.data.util.BeanItemContainer;
+//import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.data.util.IndexedContainer;
 
 public final class GroupData {
@@ -89,9 +89,7 @@ public final class GroupData {
 		"nunc@nullaanteiaculis.edu",
 		"Nulla.semper.tellus@Vestibulum.ca", };
 	
-	private static final String[] street = new String[]{"Tope Group", "Diocesis de Ourense", "Don Gianfranco Macor", "Carlos Saez", "Vittorio Zeccone",
-        "Fr. Lucas Teixeria", "Amarante", "Terra Santa II", "Abba Travel Group", "Jack Urbanowicz", "Fr. Athanasius",
-        "Bishop Luis Quinteiro", "Israel et Sinai", "Leon Group (Spain)", "Jurgensonn" };
+
 	
 	public static final String[] zip = new String[]{
 		"J78 7FR",

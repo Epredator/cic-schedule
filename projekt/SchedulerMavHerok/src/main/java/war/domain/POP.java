@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
 
-import org.vaadin.addon.customfield.demo.data.Address;
+//import org.vaadin.addon.customfield.demo.data.Address;
 
 public class POP implements Serializable {
 	 /**
@@ -17,7 +17,7 @@ public class POP implements Serializable {
      private Integer shoesize = 42;
      private String password = "";
      private UUID uuid;
-     private String countryCode = "";
+    // private String countryCode = "";
 
      public POP(String popName, String responsible) {
     	 this.popName            = popName;

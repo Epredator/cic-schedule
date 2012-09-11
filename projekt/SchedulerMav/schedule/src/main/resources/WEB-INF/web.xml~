@@ -14,13 +14,13 @@
 			<description>
 			Vaadin application class to start</description>
 			<param-name>application</param-name>
-			<param-value>org.cicts.scheduler.SchedulerApplication</param-value>
+			<param-value>war.SchedulerApplication</param-value>
 		</init-param>
 		<init-param>
 			<description>
 			Application widgetset</description>
 			<param-name>widgetset</param-name>
-			<param-value>org.cicts.scheduler.widgetset.SchedulerWidgetset</param-value>
+			<param-value>war.gwt.AppWidgetSet.gwt</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

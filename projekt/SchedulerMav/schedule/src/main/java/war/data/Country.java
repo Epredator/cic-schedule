@@ -4,7 +4,7 @@ import java.util.Locale;
 
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
-import com.vaadin.data.util.HierarchicalContainer;
+//import com.vaadin.data.util.HierarchicalContainer;
 import com.vaadin.data.util.IndexedContainer;
 import com.vaadin.terminal.Resource;
 import com.vaadin.terminal.ThemeResource;

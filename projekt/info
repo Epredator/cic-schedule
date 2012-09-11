@@ -1,6 +1,7 @@
 Mamy 3 foldery: 
 
 Scheduler -stara aplikacja pod GWT
+//-------------------------------------------------------------------------------------------------------------------------
 
 SchedulerMavHeroku  -do odpalenia w Tomcat
 Wpisujemy w terminalu:
@@ -24,10 +25,12 @@ export MAVEN_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt
 mvn jetty:run
 
 (porty 22 oraz 80 nie mogą być zajęte przez serwer Jetty,  wpisałem w pole address: "1080" następnie w przeglądarce http://localhost:8080/ i działa, logiki w tym nie widzę na razie ale chodzi ;)
+zamykanie serwera Apache (trzeba podać własną ścieżkę do swojego serwera na komputerze): sudo '/opt/apache-tomcat-7.0.29/bin/shutdown.sh'
 
 
+Aby sprawdzić jakie mamy otwarte porty możemy wpisać np. 
 
-Aby sprawdzić jakie mamy otwarte porty możemy wpisać np. nmap -v -A scanme.nmap.org
+netstat 
 
 //-------------------------------------------------------------------------------------------------------------------------
 

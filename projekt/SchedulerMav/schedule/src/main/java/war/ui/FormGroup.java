@@ -8,7 +8,7 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.CustomComponent;
-import com.vaadin.ui.DateField;
+//import com.vaadin.ui.DateField;
 import com.vaadin.ui.DefaultFieldFactory;
 import com.vaadin.ui.Field;
 import com.vaadin.ui.Form;
@@ -50,7 +50,7 @@ public class FormGroup extends CustomComponent {
     private VerticalLayout left = new VerticalLayout();
     private Button contactRemovalButton;//
     private static final String COMMON_FIELD_WIDTH = "100%";
-    private boolean useSecondResolution;
+    //private boolean useSecondResolution;
     private static String[] fields = { "ID", "Group Name", "Responsible",//
         "Mobile Phone", "Phone/Fax", "Email",//
      "Home Email", "Street", "Zip", "City", "State", "Country"  , "Language"  , 
@@ -474,14 +474,14 @@ private static String[] visibleCols = new String[] { "ID",//
                    .createCaptionByPropertyId(propertyId));
            return pf;
        }
-	   private TextField createTextField(Object propertyId) {
+	   /* private TextField createTextField(Object propertyId) {
 	       TextField f = new TextField();
 	       f.setCaption(DefaultFieldFactory
                    .createCaptionByPropertyId(propertyId));
 	       return f;
 	   }
 	   
-	   public Field createDateField(String caption) {
+	 public Field createDateField(String caption) {
 			 DateField dfa = new DateField(caption);
 		     if (useSecondResolution) {
 		    	 dfa.setResolution(DateField.RESOLUTION_SEC);
@@ -489,7 +489,7 @@ private static String[] visibleCols = new String[] { "ID",//
 		    	 dfa.setResolution(DateField.RESOLUTION_MIN);
 		     }
 		     return dfa;
-		}
+		}*/
 	   }//groupFieldFactory
 
 

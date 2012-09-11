@@ -4,7 +4,7 @@ import java.text.DateFormatSymbols;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
-import java.util.Map;
+//import java.util.Map;
 import java.util.TimeZone;
 import com.vaadin.Application;
 import com.vaadin.addon.calendar.event.BasicEvent;
@@ -26,7 +26,7 @@ import com.vaadin.data.Property;
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.data.util.BeanItem;
-import com.vaadin.terminal.ParameterHandler;
+//import com.vaadin.terminal.ParameterHandler;
 import com.vaadin.terminal.Sizeable;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
@@ -190,11 +190,11 @@ public Field createDateField(String caption) {
      return f;
 }
 
-private TextField createTextField(String caption) {
+/*private TextField createTextField(String caption) {
     TextField f = new TextField(caption);
     f.setNullRepresentation("");
     return f;
-}
+}*/
 
 
 
@@ -306,6 +306,11 @@ private void addInitialEvents() {
 private void initNavigationButtons() {
     monthButton = new Button("Month view", new ClickListener() {
 
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		public void buttonClick(ClickEvent event) {
             switchToMonthView();
         }
@@ -406,7 +411,8 @@ public void initAddNewEventButton() {
 
         private static final long serialVersionUID = -8307244759142541067L;
 
-        public void buttonClick(ClickEvent event) {
+        @SuppressWarnings("deprecation")
+		public void buttonClick(ClickEvent event) {
             Date start = getToday();
             start.setHours(0);
             start.setMinutes(0);
@@ -418,6 +424,7 @@ public void initAddNewEventButton() {
     });
 }  
 
+@SuppressWarnings("deprecation")
 private void initCalendar() {
     dataSource = new BasicEventProvider();
 
@@ -820,7 +827,8 @@ private void updateCalendarEventForm(CalendarEvent event) {
 
         private static final long serialVersionUID = 1L;
 
-        public Field createField(Item item, Object propertyId,
+        @SuppressWarnings("deprecation")
+		public Field createField(Item item, Object propertyId,
                 Component uiContext) {
             if (propertyId.equals("caption")) {
                 TextField f = createTextField("Caption");
