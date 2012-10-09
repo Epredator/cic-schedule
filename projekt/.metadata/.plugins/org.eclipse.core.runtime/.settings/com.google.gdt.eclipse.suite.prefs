@@ -1,5 +1,6 @@
 SdkRegistrants_1333895137436=com.google.appengine.eclipse.sdkbundle_1.6.4.v201203300216r37,com.google.appengine.eclipse.sdkbundle_1.7.0,com.google.gwt.eclipse.sdkbundle_2.4.0.v201206290132-rel-r37
-SdkRegistrants_1344460476749=com.google.appengine.eclipse.sdkbundle_1.7.0,com.google.gwt.eclipse.sdkbundle_2.4.0.v201206290132-rel-r42
+SdkRegistrants_1344460476749=com.google.appengine.eclipse.sdkbundle_1.7.0,com.google.gwt.eclipse.sdkbundle_2.4.0.v201206290132-rel-r42,com.google.appengine.eclipse.sdkbundle_1.7.2,com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42
+SdkRegistrants_1349554975182=com.google.appengine.eclipse.sdkbundle_1.7.2.1,com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42
 eclipse.preferences.version=1
 versionForLastForcedRebuild_Scheduler=3.0.1.v201206290132-rel-r37
 versionForLastForcedRebuild_SchedulerCICTS=3.0.1.v201206290132-rel-r42

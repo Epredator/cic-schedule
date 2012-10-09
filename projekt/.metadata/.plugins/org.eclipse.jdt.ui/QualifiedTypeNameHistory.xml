@@ -7,4 +7,18 @@
 <fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Grid"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.vaadin.ui.Button.ClickEvent"/>
+<fullyQualifiedTypeName name="war.ui.FormAgency"/>
+<fullyQualifiedTypeName name="war.ui.FormPOP"/>
+<fullyQualifiedTypeName name="war.ui.FormGroup"/>
+<fullyQualifiedTypeName name="war.domain.CalendarEventCIC"/>
+<fullyQualifiedTypeName name="war.SchedulerApplication"/>
+<fullyQualifiedTypeName name="war.ui.AddressBookMainView"/>
+<fullyQualifiedTypeName name="war.domain.Person"/>
+<fullyQualifiedTypeName name="war.domain.Department"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="war.data.DemoDataGenerator"/>
+<fullyQualifiedTypeName name="war.domain.Agency"/>
+<fullyQualifiedTypeName name="war.domain.Agent"/>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
+<fullyQualifiedTypeName name="war.ui.FormSetting"/>
 </qualifiedTypeNameHistroy>

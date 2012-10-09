@@ -8,77 +8,76 @@
 		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
 		<language>en-us</language>
 		<managingEditor>sts@springsource.com</managingEditor>
-		<pubDate>Tue, 31 Jul 2012 10:38:33 +0100</pubDate>
-		<lastBuildDate>Tue,31 Jul 2012 10:38:33 +0100</lastBuildDate>
+		<pubDate>Mon, 08 Oct 2012 10:38:33 +0100</pubDate>
+		<lastBuildDate>Mon, 08 Oct 2012 10:38:33 +0100</lastBuildDate>
 		<atom:link href="http://dist.springsource.com.s3.amazonaws.com/release/STS/doc/updates.xml" rel="self" type="application/rss+xml"/>
 
 		<item>
-			<title>Cloud Foundry Integration for Eclipse 1.1.0 released</title>
+            <title>Thanks for installing STS/GGTS 3.1.0</title>
+            <link>http://www.springsource.org/sts</link>
+            <description><![CDATA[<form><p><a href="http://www.springsource.org">SpringSource</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p>
+		<p>Please review the following documents:</p>
+		<li bindent="3"><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">3.1.0 New &amp; Noteworthy</a></li><p></p></form>]]></description>
+            <pubDate>Mon, 08 Oct 2012 12:13:33 +0100</pubDate>
+			<category>version=[3.1.0.201210040458-RELEASE,3.2.0)</category>
+		<!--            <category>severity=important</category>-->
+	        <guid isPermaLink="false">thanks-for-installing-sts-310</guid>
+		</item>
+		
+		<item>
+			<title>STS/GGTS 3.1.0 has been released</title>
+			<link>http://www.springsource.org/sts</link>
+			<description><![CDATA[<form><p><a href="http://www.springsource.org">SpringSource</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p><p>It is recommend to update as soon as possible. Users of STS 2.9.x or previous versions shouls start with a fresh install of STS/GGTS 3.1.0.</p>
+		<p>Please review the following documents:</p>
+		<li bindent="3"><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">3.1.0 New &amp; Noteworthy</a></li><p></p></form>]]></description>
+        	<pubDate>Mon, 08 Oct 2012 12:12:33 +0100</pubDate>
+			<category>version=[0,3.1.0.201210040458-RELEASE)</category>
+			<category>severity=important</category>
+			<guid isPermaLink="false">sts-310-released</guid>
+		</item>
+
+		<item>
+			<title>Cloud Foundry Integration for Eclipse 1.2.0 released</title>
 			<link>http://www.cloudfoundry.com</link>
-            <description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has just released the second release of the Eclipse integration for VMware<a href="http://www.cloudfoundry.com">Cloud Foundry</a>, including support for Micro Cloud Foundry, incremental update performance improvements and debugging support for Java/Spring applications running on Micro Cloud Foundry and using tunnels to services directly from within your IDE.</p>
+            <description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has just released the third release of the Eclipse integration for VMware<a href="http://www.cloudfoundry.com">Cloud Foundry</a>, including support for Micro Cloud Foundry, incremental update performance improvements and debugging support for Java/Spring applications running on Micro Cloud Foundry, using tunnels to services directly from within your IDE, and the new support for standalone applications.</p>
 				<p>Cloud Foundry is the industry's first open platform as a service. Run your Spring, Rails and Node.js applications. Deploy from your IDE or command line.</p>
-				<li bindent="3"><a href="http://blog.cloudfoundry.com/2012/07/31/cloud-foundry-integration-for-eclipse-now-supports-tunneling-to-services/">New &amp; Noteworthy for Cloud Foundry Integration for Eclipse 1.1.0</a></li>
 				<li bindent="3"><a href="http://docs.cloudfoundry.com/tools/STS/sts-eclipse.html">Getting Started with Eclipse/STS and Cloud Foundry</a></li>
 				<li bindent="3"><a href="https://github.com/SpringSource/eclipse-integration-cloudfoundry">Cloud Foundry Integration for Eclipse at GitHub</a></li>
 				<li bindent="3"><a href="http://start.cloudfoundry.com/getting-started.html">Getting Started with Cloud Foundry</a></li>
 				<li bindent="3"><a href="http://forum.springsource.org/forumdisplay.php?f=32">Community support forum</a></li><p></p></form>]]></description>
-			<pubDate>Tue, 31 Jul 2012 10:38:33 +0100</pubDate>
+			<pubDate>Fri, 07 Sep 2012 10:38:33 +0100</pubDate>
 <!--			<category>version=2.9.0</category> -->
-			<category>severity=important</category>
+<!--			<category>severity=important</category> -->
 			<category>bundle=!org.cloudfoundry.ide.eclipse.feature.group</category>
-			<guid isPermaLink="false">cloud-foundry-integration-110-released</guid>
+			<guid isPermaLink="false">cloud-foundry-integration-120-released</guid>
 		</item>
 <!--
 		<item>
-            <title>Thanks for installing STS 3.0.0.M3</title>
-            <link>http://www.springsource.com/products/sts</link>
-			<description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released the second milestone build of the upcoming next version of
-				the SpringSource Tool Suite (STS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
+            <title>Thanks for installing STS/GGTS 3.1.0.M1</title>
+            <link>http://www.springsource.org/sts</link>
+			<description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released the first milestone build of the upcoming next version of
+				the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
 			<p>Please review the following documents:</p>
-			<li bindent="3"><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.M3.pdf">3.0.0.M3 New &amp; Noteworthy</a></li><p></p></form>]]></description>
-            <pubDate>Mon, 9 Jul 2012 12:13:33 +0100</pubDate>
-			<category>version=[3.0.0.201207050648-M3,3.1.0)</category>
+			<li bindent="3"><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">3.1.0.M1 New &amp; Noteworthy</a></li><p></p></form>]]></description>
+            <pubDate>Tue, 18 Sep 2012 12:13:33 +0100</pubDate>
+			<category>version=[3.1.0.201209120606-M1,3.2.0)</category>
             <category>severity=important</category>
-	        <guid isPermaLink="false">thanks-for-installing-sts-300m3</guid>
+	        <guid isPermaLink="false">thanks-for-installing-sts-310m1</guid>
 		</item>
 		
 		<item>
-			<title>STS 3.0.0.M3 has been released</title>
-			<link>http://www.springsource.com/products/sts</link>
-			<description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released the second milestone build of the upcoming next version of
-				the SpringSource Tool Suite (STS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
+			<title>STS/GGTS 3.1.0.M1 has been released</title>
+			<link>http://www.springsource.org/sts</link>
+			<description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released the first milestone build of the upcoming next version of
+				the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
 			<p>Please review the following documents:</p>
-			<li bindent="3"><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.M3.pdf">3.0.0.M3 New &amp; Noteworthy</a></li><p></p></form>]]></description>
-        	<pubDate>Mon, 9 Jul 2012 12:12:33 +0100</pubDate>
-			<category>version=[0,3.0.0.201207050648-M3)</category>
+			<li bindent="3"><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">3.1.0.M1 New &amp; Noteworthy</a></li><p></p></form>]]></description>
+        	<pubDate>Tue, 18 Sep 2012 12:12:33 +0100</pubDate>
+			<category>version=[0,3.1.0.201209120606-M1)</category>
 			<category>severity=important</category>
-			<guid isPermaLink="false">sts-300m3-released</guid>
+			<guid isPermaLink="false">sts-310m1-released</guid>
 		</item>
 -->
-		<item>
-            <title>Thanks for installing STS/GGTS 3.0.0</title>
-            <link>http://www.springsource.org/sts</link>
-            <description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p>
-		<p>Please review the following documents:</p>
-		<li bindent="3"><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">3.0.0 New &amp; Noteworthy</a></li><p></p></form>]]></description>
-            <pubDate>Mon, 13 Aug 2012 12:13:33 +0100</pubDate>
-			<category>version=[3.0.0.201208090942-RELEASE,3.1.0)</category>
-		<!--            <category>severity=important</category>-->
-	        <guid isPermaLink="false">thanks-for-installing-sts-300</guid>
-		</item>
-		
-		<item>
-			<title>STS/GGTS 3.0.0 has been released</title>
-			<link>http://www.springsource.org/sts</link>
-			<description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p><p>It is recommend to update as soon as possible and to start with a fresh
-installation for STS/GGTS.</p>
-		<p>Please review the following documents:</p>
-		<li bindent="3"><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">3.0.0 New &amp; Noteworthy</a></li><p></p></form>]]></description>
-        	<pubDate>Mon, 13 Aug 2012 12:12:33 +0100</pubDate>
-			<category>version=[0,3.0.0.201208090942-RELEASE)</category>
-			<category>severity=important</category>
-			<guid isPermaLink="false">sts-300-released</guid>
-		</item>
 <!--
 		<item>
 			<title>Cloud Foundry Integration for Eclipse 1.0 released</title>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="59" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
-<window height="756" maximized="true" width="776" x="51" y="111">
+<window height="756" maximized="true" width="772" x="443" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,20 +15,21 @@
 <coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="84" y="30"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.vaadin.integration.eclipse.toolbars.vaadinToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.vaadin.visualdesigner.eclipse.editors.VaadinEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wb.core.guiEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -42,12 +43,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.internal.presentations.R21PresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Scheduler.gwt.xml" partName="Scheduler.gwt.xml" path="/home/adas/at/projekt/Scheduler/src/org/cicts/Scheduler.gwt.xml" title="Scheduler.gwt.xml" tooltip="Scheduler/src/org/cicts/Scheduler.gwt.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Scheduler/src/org/cicts/Scheduler.gwt.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyVaadinApplication.java" partName="MyVaadinApplication.java" path="/home/adas/at/projekt/SchedulerMavHerok/src/main/java/war/MyVaadinApplication.java" title="MyVaadinApplication.java" tooltip="SchedulerMavHerok/src/main/java/war/MyVaadinApplication.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SchedulerMavHerok/src/main/java/war/MyVaadinApplication.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SchedulerApplication.java" partName="SchedulerApplication.java" path="/home/adas/at/projekt/SchedulerMavHerok/src/main/java/war/SchedulerApplication.java" title="SchedulerApplication.java" tooltip="SchedulerMavHerok/src/main/java/war/SchedulerApplication.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SchedulerMavHerok/src/main/java/war/SchedulerApplication.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1354"/>
 </editor>
 </editors>
 <views>
@@ -128,7 +135,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (6 items)"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="139" org.eclipse.ui.ide.markerType="191" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="940"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -192,7 +199,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" activePerspective="org.eclipse.wst.jsdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.wst.jsdt.ui.PackageExplorer" activePerspective="org.eclipse.wst.jsdt.ui.JavaPerspective">
 <perspective editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -595,9 +602,9 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.24950364" ratioLeft="377" ratioRight="1134" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.27753305" ratioLeft="441" ratioRight="1148" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74968237" ratioLeft="590" ratioRight="197" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -634,13 +641,37 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Scheduler/src/org/cicts/Scheduler.gwt.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/Scheduler/src/org/cicts/Scheduler.gwt.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SchedulerMavHerok/src/main/java/war/domain/Person.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SchedulerMavHerok/src/main/java/war/SchedulerApplication.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SchedulerMavHerok/src/main/java/war/MyVaadinApplication.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SchedulerMavHerok/src/main/java/war/MyVaadinApplication.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SchedulerMavHerok/src/main/java/war/SchedulerApplication.java"/>
 </editors>
-<item historyLabel="Scheduler.gwt.xml" index="0">
+<item historyLabel="Person.java" index="0">
+<position/>
+</item>
+<item historyLabel="Person.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="Scheduler.gwt.xml" index="1">
+<item historyLabel="SchedulerApplication.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MyVaadinApplication.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SchedulerApplication.java" index="1">
+<position info="not_deleted" x="6340" y="0"/>
+</item>
+<item historyLabel="MyVaadinApplication.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SchedulerApplication.java" index="1">
+<position info="not_deleted" x="7811" y="0"/>
+</item>
+<item historyLabel="MyVaadinApplication.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="SchedulerApplication.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -649,9 +680,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.PerspectiveSwitcher"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -664,6 +692,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SchedulerApplication.java" tooltip="SchedulerMavHerok/src/main/java/war/SchedulerApplication.java">
+<persistable path="/SchedulerMavHerok/src/main/java/war/SchedulerApplication.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyVaadinApplication.java" tooltip="SchedulerMavHerok/src/main/java/war/MyVaadinApplication.java">
+<persistable path="/SchedulerMavHerok/src/main/java/war/MyVaadinApplication.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" tooltip="SchedulerMavHerok/src/main/java/war/domain/Person.java">
+<persistable path="/SchedulerMavHerok/src/main/java/war/domain/Person.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="persistence.xml" tooltip="SchedulerMavHerok/src/main/resources/META-INF/persistence.xml">
+<persistable path="/SchedulerMavHerok/src/main/resources/META-INF/persistence.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VMyComponent.java" tooltip="SchedulerMavHerok/src/main/java/war/gwt/client/VMyComponent.java">
+<persistable path="/SchedulerMavHerok/src/main/java/war/gwt/client/VMyComponent.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="SchedulerMavHerok/pom.xml">
+<persistable path="/SchedulerMavHerok/pom.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Scheduler.gwt.xml" tooltip="Scheduler/src/org/cicts/Scheduler.gwt.xml">
 <persistable path="/Scheduler/src/org/cicts/Scheduler.gwt.xml"/>
 </file>
@@ -690,24 +736,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.gwt.eclipse.core.editors.gwtJavaEditor" name="AppointmentBuilder.java" tooltip="Scheduler/src/org/cicts/client/AppointmentBuilder.java">
 <persistable path="/Scheduler/src/org/cicts/client/AppointmentBuilder.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="CalendarSystem.class" tooltip="sun.util.calendar.CalendarSystem">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Scheduler/\/usr\/lib\/jvm\/java-7-oracle\/jre\/lib\/rt.jar&lt;sun.util.calendar(CalendarSystem.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Date.class" tooltip="java.util.Date">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Scheduler/\/usr\/lib\/jvm\/java-7-oracle\/jre\/lib\/rt.jar&lt;java.util(Date.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Appointment.class" tooltip="com.bradrydzewski.gwt.calendar.client.Appointment">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Scheduler/\/home\/adas\/nauczanie\/wsksim\/sem\/at\/projekt\/jar\/gwt-cal-0.9.3-dndCreation-SNAPSHOT.jar&lt;com.bradrydzewski.gwt.calendar.client(Appointment.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="README.txt" tooltip="Scheduler/README.txt">
-<persistable path="/Scheduler/README.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Scheduler.iml" tooltip="Scheduler/Scheduler.iml">
-<persistable path="/Scheduler/Scheduler.iml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Scheduler.launch" tooltip="Scheduler/Scheduler.launch">
-<persistable path="/Scheduler/Scheduler.launch"/>
 </file>
 </mruList>
 </workbench>

@@ -1,27 +1,23 @@
 Mamy 3 foldery: 
 
-Scheduler -stara aplikacja pod GWT
+
 //-------------------------------------------------------------------------------------------------------------------------
 
-SchedulerMavHeroku  -do odpalenia w Tomcat
+CIC Schedule -do odpalenia w Tomcat
 Wpisujemy w terminalu:
-mvn package
+mvn package   lub możemy wpisać mvn package jeżeli chcemy aby program od początku ściągnął pakiety i skompilował
 java -jar target/dependency/webapp-runner.jar target/*.war
 Jeśli port nie jest zajęty aplikacja powinna się uruchomić pod adresem: http://localhost:8080/schedule
 Dodatkowo mamy opcje wysłania na heroku.com (info jak to zrobić)
 
 
-//-------------------------------------------------------------------------------------------------------------------------
-SchedulerMav - skonfigurowany do odpalenia lokalnie na serwerze Jetty
-cd schedule
-mvn package
-mvn jetty: run -e
-Jeśli port nie jest zajęty aplikacja powinna się uruchomić pod adresem: http://localhost:8080/schedule
+
 
 Opcje:
 
 Jeżeli chcemy wybrać inny port wpisujemy w terminalu:
-
+export MAVEN_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=1081,server=y,suspend=n"
+mvn jetty:run
 
 (porty 22 oraz 80 nie mogą być zajęte przez serwer Jetty,  wpisałem w pole address: "1080" następnie w przeglądarce http://localhost:8080/ i działa, logiki w tym nie widzę na razie ale chodzi ;)
 zamykanie serwera Apache (trzeba podać własną ścieżkę do swojego serwera na komputerze): sudo '/opt/apache-tomcat-7.0.29/bin/shutdown.sh'
