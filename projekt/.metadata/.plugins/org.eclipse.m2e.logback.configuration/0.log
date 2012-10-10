@@ -1471,3 +1471,573 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment 
 2012-10-09 19:05:27,956 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2012-10-09 19:05:27,962 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2012-10-09 19:05:27,962 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:31:56,104 [Worker-6] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2012-10-09 19:31:57,051 [Worker-6] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:32:21,898 [Worker-6] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 25798 ms
+2012-10-09 19:32:41,584 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:32:41,591 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 19:32:41,633 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:32:41,650 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:34:06,989 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:34:06,992 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:34:06,996 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:34:06,996 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:37:36,308 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:37:36,345 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:37:36,358 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:37:36,358 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:39:52,045 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:39:52,991 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:39:52,994 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 19:39:53,381 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:39:53,382 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:39:55,418 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:39:56,601 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:39:56,604 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 19:39:56,652 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:39:56,653 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:40:00,484 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:40:00,484 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:40:00,487 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:40:00,487 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:42:59,295 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:42:59,311 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:42:59,314 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:42:59,329 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:46:05,481 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:46:05,920 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:46:05,922 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 19:46:06,037 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:46:06,037 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:46:07,497 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:46:07,497 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:46:07,548 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:46:07,548 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:46:11,758 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:46:11,759 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:46:11,761 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:46:11,761 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:47:22,478 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:47:22,626 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.gwt:gwt-user:jar:2.5.0 is missing, no dependency information available
+2012-10-09 19:47:22,780 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:47:22,781 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:47:22,783 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:47:22,783 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:47:59,552 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:47:59,633 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.gwt:gwt-user:jar:2.5.0 is missing, no dependency information available
+2012-10-09 19:47:59,828 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:47:59,837 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 19:47:59,849 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:47:59,850 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:48:24,271 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:48:24,361 [Worker-16] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:48:25,537 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/google/gwt/gwt-user/2.5.0.rc2/gwt-user-2.5.0.rc2.pom
+2012-10-09 19:48:25,624 [Worker-16] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:48:27,050 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/google/gwt/gwt-user/2.5.0.rc2/gwt-user-2.5.0.rc2.pom
+2012-10-09 19:48:27,055 [Worker-16] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:48:30,805 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.5.0.rc2/gwt-user-2.5.0.rc2.pom
+2012-10-09 19:48:30,809 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.gwt:gwt-user:jar:2.5.0.rc2 is missing, no dependency information available
+2012-10-09 19:48:30,819 [Worker-16] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:48:31,422 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/google/gwt/gwt-user/2.5.0.rc2/gwt-user-2.5.0.rc2.jar
+2012-10-09 19:48:31,429 [Worker-16] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:48:35,517 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/google/gwt/gwt-user/2.5.0.rc2/gwt-user-2.5.0.rc2.jar
+2012-10-09 19:48:35,523 [Worker-16] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:48:36,232 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.5.0.rc2/gwt-user-2.5.0.rc2.jar
+2012-10-09 19:48:36,297 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:48:36,297 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:48:36,299 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:48:36,300 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:49:02,851 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:49:02,890 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.gwt:gwt-user:jar:2.5.0 is missing, no dependency information available
+2012-10-09 19:49:02,960 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:02,960 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:49:02,962 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:02,963 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:49:12,966 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:49:13,141 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:13,142 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:49:13,144 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:13,144 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:49:15,548 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:15,588 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 19:49:15,677 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:15,678 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:49:30,655 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:30,655 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:49:30,657 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:49:30,657 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:49:43,674 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.4.0-1 is missing, no dependency information available
+2012-10-09 19:49:43,678 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.4.0-1 is missing, no dependency information available
+2012-10-09 19:49:43,681 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.4.0-1 is missing, no dependency information available
+2012-10-09 19:49:43,688 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:50:15,775 [Worker-16] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:50:17,404 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/mojo/gwt-maven-plugin/2.5.0-rc2/gwt-maven-plugin-2.5.0-rc2.pom
+2012-10-09 19:50:17,412 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:50:17,416 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:50:17,419 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:50:17,426 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:50:17,792 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:50:17,795 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:50:17,811 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:50:17,820 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:52:30,838 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:52:30,841 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:52:30,845 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.codehaus.mojo:gwt-maven-plugin:jar:2.5.0-rc2 is missing, no dependency information available
+2012-10-09 19:52:30,854 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:52:40,153 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:52:40,261 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:52:40,261 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 19:52:40,263 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 19:52:40,264 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 19:52:45,137 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 19:52:45,201 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:48,136 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.pom
+2012-10-09 19:52:48,142 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:49,264 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.pom
+2012-10-09 19:52:49,269 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:49,672 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.pom
+2012-10-09 19:52:49,676 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.pom
+2012-10-09 19:52:49,899 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:50,290 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/google/gwt/gwt/2.5.0-rc2/gwt-2.5.0-rc2.pom
+2012-10-09 19:52:50,297 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:52,235 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/google/gwt/gwt/2.5.0-rc2/gwt-2.5.0-rc2.pom
+2012-10-09 19:52:52,241 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:52,476 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/google/gwt/gwt/2.5.0-rc2/gwt-2.5.0-rc2.pom
+2012-10-09 19:52:52,477 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/gwt/gwt/2.5.0-rc2/gwt-2.5.0-rc2.pom
+2012-10-09 19:52:52,622 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:53,050 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/json/json/20090211/json-20090211.pom
+2012-10-09 19:52:53,057 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:54,077 [New I/O client worker #16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/json/json/20090211/json-20090211.pom
+2012-10-09 19:52:54,081 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:54,252 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/json/json/20090211/json-20090211.pom
+2012-10-09 19:52:54,253 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/json/json/20090211/json-20090211.pom
+2012-10-09 19:52:54,363 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:54,898 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.jar
+2012-10-09 19:52:54,899 [New I/O client worker #18-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/json/json/20090211/json-20090211.jar
+2012-10-09 19:52:54,911 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:56,025 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.jar
+2012-10-09 19:52:56,048 [New I/O client worker #19-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/json/json/20090211/json-20090211.jar
+2012-10-09 19:52:56,054 [Worker-10] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-09 19:52:56,277 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.jar
+2012-10-09 19:52:57,251 [New I/O client worker #20-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/json/json/20090211/json-20090211.jar
+2012-10-09 19:52:57,466 [New I/O client worker #20-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/json/json/20090211/json-20090211.jar
+2012-10-09 20:00:17,377 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.5.0-rc2/gwt-user-2.5.0-rc2.jar
+2012-10-09 20:00:18,948 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:00:18,948 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 20:00:18,951 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:00:18,951 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:00:20,653 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:00:20,655 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 20:00:20,863 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:00:20,865 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:03:19,528 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 20:03:19,832 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:03:19,833 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 20:03:19,835 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:03:19,835 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:03:22,364 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:03:22,366 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 20:03:22,508 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:03:22,508 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:03:58,107 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:03:58,107 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 20:03:58,109 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:03:58,109 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:04:03,845 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 20:04:04,030 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:04:04,030 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 20:04:04,032 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:04:04,032 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:04:08,409 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:04:08,411 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 20:04:08,564 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:04:08,564 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:06:59,540 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:06:59,632 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 20:06:59,635 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:06:59,661 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:10:52,971 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:10:52,971 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 20:10:52,973 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:10:52,974 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:12:03,828 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.cicts:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-09 20:12:04,974 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:12:04,976 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-09 20:12:06,048 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:12:06,048 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-09 20:12:09,290 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:12:09,290 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-09 20:12:09,292 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-09 20:12:09,293 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:12:42,461 [Worker-1] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2012-10-10 08:12:44,518 [Worker-1] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 08:13:12,434 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:13:16,977 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:16,991 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:13:19,485 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:19,660 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:13:21,180 [Worker-1] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 38724 ms
+2012-10-10 08:13:22,967 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:13:23,405 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:23,412 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:13:23,684 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:23,685 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:13:26,556 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:26,558 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:13:26,701 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:26,702 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:13:27,803 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:27,805 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:13:27,861 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:27,861 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:13:29,040 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:29,042 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:13:29,106 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:29,107 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:13:30,957 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:30,960 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:13:31,025 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:31,025 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:13:36,716 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:36,718 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:13:36,766 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:36,766 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:13:41,158 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:41,158 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 08:13:41,176 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:13:41,176 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:17:12,530 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:17:12,533 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:17:12,541 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:17:12,541 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:19:38,315 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2012-10-10 08:19:38,513 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:19:38,893 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/main/java
+2012-10-10 08:19:38,894 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /schedule/src/main/resources
+2012-10-10 08:19:38,909 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/test/java
+2012-10-10 08:19:39,024 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2012-10-10 08:19:40,701 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:19:40,703 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:19:40,778 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:19:40,779 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:20:33,731 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:20:34,040 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:20:34,043 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:20:34,049 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:20:34,050 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:22:59,530 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:22:59,646 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:22:59,646 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 08:22:59,649 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:22:59,649 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:23:00,611 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:23:00,750 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:00,752 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:23:00,798 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:00,798 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:23:16,240 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:16,241 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 08:23:16,248 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:16,248 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:23:25,355 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2012-10-10 08:23:25,454 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:23:25,763 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/main/java
+2012-10-10 08:23:25,764 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /schedule/src/main/resources
+2012-10-10 08:23:25,765 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/test/java
+2012-10-10 08:23:25,938 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2012-10-10 08:23:26,886 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:26,888 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:23:26,894 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:26,894 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:23:35,841 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2012-10-10 08:23:35,916 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:23:36,130 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/main/java
+2012-10-10 08:23:36,130 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /schedule/src/main/resources
+2012-10-10 08:23:36,132 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/test/java
+2012-10-10 08:23:36,209 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2012-10-10 08:23:37,282 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:37,302 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:23:37,314 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:37,314 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:23:52,102 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:23:52,277 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:52,279 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:23:52,335 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:23:52,336 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:24:43,494 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:24:43,881 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:24:43,883 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 08:24:43,938 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:24:43,939 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:24:57,418 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 08:24:57,641 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:24:57,641 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 08:24:57,644 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:24:57,644 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:25:00,349 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:25:00,349 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 08:25:00,352 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:25:00,352 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:29:41,376 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:29:41,391 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 08:29:41,429 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:29:41,447 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 08:50:18,697 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:50:18,718 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 08:50:18,731 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 08:50:18,744 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:07:26,913 [Worker-5] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2012-10-10 09:07:28,100 [Worker-5] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:07:57,157 [Worker-5] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 30249 ms
+2012-10-10 09:08:31,570 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:08:31,651 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:08:31,984 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:08:32,031 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:13:46,454 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 09:13:46,977 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:13:46,980 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:13:47,115 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:13:47,116 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:13:55,481 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 09:13:55,904 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:13:55,907 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:13:56,066 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:13:56,067 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:14:20,162 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:14:20,165 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 09:14:20,168 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:14:20,168 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:14:41,707 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:14:41,708 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 09:14:41,710 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:14:41,710 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:25:59,882 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 09:26:00,246 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:26:00,254 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:26:00,357 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:26:00,357 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:29:44,840 [Worker-3] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2012-10-10 09:29:45,769 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:30:07,244 [Worker-3] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 22420 ms
+2012-10-10 09:30:09,603 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 09:30:10,915 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:30:10,952 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:30:11,136 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:30:11,136 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:31:51,807 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:31:57,320 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/vaadin/addons/vaadin-calendar-agpl-3.0/1.2.1/vaadin-calendar-agpl-3.0-1.2.1-sources.jar
+2012-10-10 09:31:57,445 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:31:57,711 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/vaadin/addons/vaadin-calendar-agpl-3.0/1.2.1/vaadin-calendar-agpl-3.0-1.2.1-sources.jar
+2012-10-10 09:31:57,726 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:31:58,468 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/vaadin/addons/vaadin-calendar-agpl-3.0/1.2.1/vaadin-calendar-agpl-3.0-1.2.1-sources.jar
+2012-10-10 09:31:58,473 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:31:58,933 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/vaadin/addons/vaadin-calendar-agpl-3.0/1.2.1/vaadin-calendar-agpl-3.0-1.2.1-sources.jar
+2012-10-10 09:31:58,957 [Worker-3] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.vaadin.addons:vaadin-calendar-agpl-3.0:1.2.1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.vaadin.addons:vaadin-calendar-agpl-3.0:jar:sources:1.2.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:697) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:642) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:230) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:210) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:185) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:141) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2012-10-10 09:31:58,965 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:31:59,337 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/vaadin/addon/jpacontainer-addon-agpl-3.0/2.0.0/jpacontainer-addon-agpl-3.0-2.0.0-sources.jar
+2012-10-10 09:31:59,342 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:31:59,650 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/vaadin/addon/jpacontainer-addon-agpl-3.0/2.0.0/jpacontainer-addon-agpl-3.0-2.0.0-sources.jar
+2012-10-10 09:31:59,656 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:00,259 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/vaadin/addon/jpacontainer-addon-agpl-3.0/2.0.0/jpacontainer-addon-agpl-3.0-2.0.0-sources.jar
+2012-10-10 09:32:00,263 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:00,639 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/vaadin/addon/jpacontainer-addon-agpl-3.0/2.0.0/jpacontainer-addon-agpl-3.0-2.0.0-sources.jar
+2012-10-10 09:32:00,642 [Worker-3] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for com.vaadin.addon:jpacontainer-addon-agpl-3.0:2.0.0
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.vaadin.addon:jpacontainer-addon-agpl-3.0:jar:sources:2.0.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:697) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:642) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:230) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:210) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:185) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:141) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2012-10-10 09:32:00,645 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:00,943 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/vaadin/addons/customfield/0.9.3/customfield-0.9.3-sources.jar
+2012-10-10 09:32:00,952 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:01,268 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/vaadin/addons/customfield/0.9.3/customfield-0.9.3-sources.jar
+2012-10-10 09:32:01,274 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:01,976 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/vaadin/addons/customfield/0.9.3/customfield-0.9.3-sources.jar
+2012-10-10 09:32:01,978 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:02,478 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/vaadin/addons/customfield/0.9.3/customfield-0.9.3-sources.jar
+2012-10-10 09:32:02,483 [Worker-3] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.vaadin.addons:customfield:0.9.3
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.vaadin.addons:customfield:jar:sources:0.9.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:697) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:642) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:230) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:210) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:185) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:141) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2012-10-10 09:32:02,486 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:02,753 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/vaadin/addon/beanvalidation-addon/1.0.0/beanvalidation-addon-1.0.0-sources.jar
+2012-10-10 09:32:02,756 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:03,024 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/vaadin/addon/beanvalidation-addon/1.0.0/beanvalidation-addon-1.0.0-sources.jar
+2012-10-10 09:32:03,031 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:03,646 [New I/O client worker #16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/vaadin/addon/beanvalidation-addon/1.0.0/beanvalidation-addon-1.0.0-sources.jar
+2012-10-10 09:32:03,651 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:03,928 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/vaadin/addon/beanvalidation-addon/1.0.0/beanvalidation-addon-1.0.0-sources.jar
+2012-10-10 09:32:03,932 [Worker-3] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for com.vaadin.addon:beanvalidation-addon:1.0.0
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.vaadin.addon:beanvalidation-addon:jar:sources:1.0.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:697) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:642) ~[org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:230) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:210) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:185) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:141) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2012-10-10 09:32:03,940 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.validation:validation-api:1.0.0.GA
+2012-10-10 09:32:03,944 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:04,244 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/vaadin/vaadin/6.7.4/vaadin-6.7.4-sources.jar
+2012-10-10 09:32:04,247 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:04,549 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/vaadin/vaadin/6.7.4/vaadin-6.7.4-sources.jar
+2012-10-10 09:32:04,552 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:05,145 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/vaadin/vaadin/6.7.4/vaadin-6.7.4-sources.jar
+2012-10-10 09:32:05,148 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:05,269 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/vaadin/vaadin/6.7.4/vaadin-6.7.4-sources.jar
+2012-10-10 09:32:10,413 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/vaadin/vaadin/6.7.4/vaadin-6.7.4-sources.jar
+2012-10-10 09:32:10,816 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.vaadin:vaadin:6.7.4
+2012-10-10 09:32:10,818 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:11,128 [New I/O client worker #22-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/eclipse/persistence/eclipselink/2.2.0/eclipselink-2.2.0-sources.jar
+2012-10-10 09:32:11,134 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:11,455 [New I/O client worker #23-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/eclipse/persistence/eclipselink/2.2.0/eclipselink-2.2.0-sources.jar
+2012-10-10 09:32:11,460 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:32:17,746 [New I/O client worker #24-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/eclipse/persistence/eclipselink/2.2.0/eclipselink-2.2.0-sources.jar
+2012-10-10 09:33:58,448 [New I/O client worker #24-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/eclipse/persistence/eclipselink/2.2.0/eclipselink-2.2.0-sources.jar
+2012-10-10 09:34:04,922 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.eclipse.persistence:eclipselink:2.2.0
+2012-10-10 09:34:04,925 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:05,669 [New I/O client worker #25-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0-sources.jar
+2012-10-10 09:34:05,673 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:05,983 [New I/O client worker #26-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0-sources.jar
+2012-10-10 09:34:05,987 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:07,063 [New I/O client worker #27-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0-sources.jar
+2012-10-10 09:34:16,130 [New I/O client worker #27-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0-sources.jar
+2012-10-10 09:34:17,130 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.eclipse.persistence:javax.persistence:2.0.0
+2012-10-10 09:34:17,132 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:17,505 [New I/O client worker #28-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/h2database/h2/1.3.160/h2-1.3.160-sources.jar
+2012-10-10 09:34:17,510 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:17,884 [New I/O client worker #29-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/h2database/h2/1.3.160/h2-1.3.160-sources.jar
+2012-10-10 09:34:17,889 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:18,647 [New I/O client worker #30-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/h2database/h2/1.3.160/h2-1.3.160-sources.jar
+2012-10-10 09:34:18,650 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:18,802 [New I/O client worker #31-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/h2database/h2/1.3.160/h2-1.3.160-sources.jar
+2012-10-10 09:34:25,112 [New I/O client worker #31-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/h2database/h2/1.3.160/h2-1.3.160-sources.jar
+2012-10-10 09:34:25,486 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.h2database:h2:1.3.160
+2012-10-10 09:34:25,488 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:25,803 [New I/O client worker #32-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar
+2012-10-10 09:34:25,808 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:26,179 [New I/O client worker #33-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar
+2012-10-10 09:34:26,185 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:26,966 [New I/O client worker #34-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar
+2012-10-10 09:34:26,968 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:27,263 [New I/O client worker #35-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar
+2012-10-10 09:34:29,375 [New I/O client worker #35-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar
+2012-10-10 09:34:29,625 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate:hibernate-validator:4.2.0.Final
+2012-10-10 09:34:29,627 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:29,981 [New I/O client worker #36-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar
+2012-10-10 09:34:29,984 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:30,367 [New I/O client worker #37-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar
+2012-10-10 09:34:30,369 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:32,096 [New I/O client worker #38-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar
+2012-10-10 09:34:32,100 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:32,243 [New I/O client worker #39-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar
+2012-10-10 09:34:32,418 [New I/O client worker #39-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar
+2012-10-10 09:34:32,632 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.slf4j:slf4j-api:1.6.1
+2012-10-10 09:34:32,634 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:32,982 [New I/O client worker #40-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/google/gwt/gwt-user/2.3.0/gwt-user-2.3.0-sources.jar
+2012-10-10 09:34:32,984 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:33,310 [New I/O client worker #41-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.vaadin.com/vaadin-addons/com/google/gwt/gwt-user/2.3.0/gwt-user-2.3.0-sources.jar
+2012-10-10 09:34:33,312 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:34,065 [New I/O client worker #42-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo/com/google/gwt/gwt-user/2.3.0/gwt-user-2.3.0-sources.jar
+2012-10-10 09:34:34,068 [Worker-3] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2012-10-10 09:34:34,332 [New I/O client worker #43-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.3.0/gwt-user-2.3.0-sources.jar
+2012-10-10 09:34:57,011 [New I/O client worker #43-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/gwt/gwt-user/2.3.0/gwt-user-2.3.0-sources.jar
+2012-10-10 09:34:57,376 [Worker-3] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.gwt:gwt-user:2.3.0
+2012-10-10 09:34:58,716 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:34:58,724 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 09:34:58,727 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:34:58,728 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:48:54,321 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:48:54,325 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:48:54,336 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:48:54,347 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:52:32,099 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:52:32,100 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 09:52:32,112 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:52:32,112 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:56:17,756 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 09:56:18,477 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:18,481 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:56:18,559 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:18,560 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:56:45,173 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 09:56:45,299 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:45,301 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 09:56:45,325 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:45,325 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:56:46,528 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:46,529 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 09:56:46,539 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:46,540 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:56:57,817 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:57,818 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 09:56:57,821 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 09:56:57,822 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 09:57:24,645 [main] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:01:31,428 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:01:31,733 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:01:31,735 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 10:01:31,845 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:01:31,846 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:02:00,783 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:02:01,118 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:02:01,119 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 10:02:01,134 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:02:01,134 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:02:34,076 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:02:34,330 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:02:34,330 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 10:02:34,332 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:02:34,333 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:02:52,666 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:02:52,666 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 10:02:52,668 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:02:52,668 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:04:38,332 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:04:38,616 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:04:38,616 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 10:04:38,619 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:04:38,619 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:04:40,574 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:04:40,578 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 10:04:40,640 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:04:40,640 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:07:53,825 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:07:54,077 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:07:54,305 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:07:54,311 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 10:07:54,368 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:07:54,368 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:07:55,820 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/main/java
+2012-10-10 10:07:55,821 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /schedule/src/main/resources
+2012-10-10 10:07:55,879 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/test/java
+2012-10-10 10:14:01,719 [Worker-37] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2012-10-10 10:14:15,942 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.vaadin:schedule:0.001 @ /home/epredator/at/projekt/schedule/pom.xml.
+2012-10-10 10:14:23,213 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/main/java
+2012-10-10 10:14:23,214 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /schedule/src/main/resources
+2012-10-10 10:14:23,215 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /schedule/src/test/java
+2012-10-10 10:14:24,460 [Worker-37] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 23 sec
+2012-10-10 10:14:27,757 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:14:27,778 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2012-10-10 10:14:27,847 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:14:27,847 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources
+2012-10-10 10:21:28,437 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:21:28,602 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-10-10 10:21:28,604 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-10-10 10:21:28,605 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/epredator/at/projekt/schedule/src/test/resources

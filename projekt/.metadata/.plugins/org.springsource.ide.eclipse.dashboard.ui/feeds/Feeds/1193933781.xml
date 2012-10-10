@@ -13,11 +13,25 @@
 	<atom:link href="http://blog.springsource.org/feed/" rel="self" type="application/rss+xml" />
 	<link>http://blog.springsource.org</link>
 	<description>The voice of SpringSource</description>
-	<lastBuildDate>Fri, 05 Oct 2012 23:55:35 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 10 Oct 2012 00:37:55 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.1.1</generator>
+		<item>
+		<title>What&#039;s New in Spring Integration 2.2 (Part 4 &#8211; Retry and More)</title>
+		<link>http://blog.springsource.org/2012/10/09/spring-integration-2-2-retry-and-more/</link>
+		<comments>http://blog.springsource.org/2012/10/09/spring-integration-2-2-retry-and-more/#comments</comments>
+		<pubDate>Tue, 09 Oct 2012 18:35:57 +0000</pubDate>
+		<dc:creator>Gary Russell</dc:creator>
+				<category><![CDATA[Spring]]></category>
+		<category><![CDATA[Spring Integration]]></category>
+
+		<guid isPermaLink="false">http://blog.springsource.org/?p=11360</guid>
+		<description><![CDATA[Introduction This is the fourth part in a series of blog posts highlighting some of the new features available in Spring Integration 2.2 following the recent release of Release Candidate 1. The first part talks about the MongoDB adapters, the second part talks about transaction synchronization; the third part talks about JPA support. Spring Integration  <a href="http://blog.springsource.org/2012/10/09/spring-integration-2-2-retry-and-more/"><em>Read more...</em></a>]]></description>
+		<wfw:commentRss>http://blog.springsource.org/2012/10/09/spring-integration-2-2-retry-and-more/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
 		<item>
 		<title>What&#039;s New in Spring Integration 2.2 (Part 3 ? JPA Support)</title>
 		<link>http://blog.springsource.org/2012/10/05/whats-new-in-spring-integration-2-2-part-3-jpa-support/</link>
@@ -152,21 +166,6 @@
 		<description><![CDATA[The last ten years has been an exciting and challenging journey for me and I?m very proud of the technology and community that my SpringSource cofounders and I fostered. However, there always comes a time to make a choice about the places you?ll go, and it?s time for me to leave VMware and pursue other  <a href="http://blog.springsource.org/2012/07/03/oh-the-places-youll-go/"><em>Read more...</em></a>]]></description>
 		<wfw:commentRss>http://blog.springsource.org/2012/07/03/oh-the-places-youll-go/feed/</wfw:commentRss>
 		<slash:comments>101</slash:comments>
-		</item>
-		<item>
-		<title>Groovy 2.0 released</title>
-		<link>http://blog.springsource.org/2012/07/02/groovy-2-0-released/</link>
-		<comments>http://blog.springsource.org/2012/07/02/groovy-2-0-released/#comments</comments>
-		<pubDate>Mon, 02 Jul 2012 15:50:32 +0000</pubDate>
-		<dc:creator>Guillaume Laforge</dc:creator>
-				<category><![CDATA[Groovy/Grails]]></category>
-		<category><![CDATA[Java]]></category>
-		<category><![CDATA[Open Source]]></category>
-
-		<guid isPermaLink="false">http://blog.springsource.org/?p=11253</guid>
-		<description><![CDATA[The Groovy development team and SpringSource are happy to echo the announcement of the release of Groovy 2.0, the highly popular dynamic language for the Java platform.?The key highlights of this important milestone are: a static type checker to let the compiler tell you about the correctness of your code, static compilation for the performance  <a href="http://blog.springsource.org/2012/07/02/groovy-2-0-released/"><em>Read more...</em></a>]]></description>
-		<wfw:commentRss>http://blog.springsource.org/2012/07/02/groovy-2-0-released/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
 </rss>

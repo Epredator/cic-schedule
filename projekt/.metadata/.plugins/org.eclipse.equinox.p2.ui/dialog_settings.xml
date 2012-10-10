@@ -3,8 +3,15 @@
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.WizardSettings">
 		<item value="837" key="DIALOG_WIDTH"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="873" key="DIALOG_HEIGHT"/>
 		<item value="382" key="DIALOG_X_ORIGIN"/>
+		<item value="873" key="DIALOG_HEIGHT"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.WizardSettings">
+		<item value="613" key="DIALOG_WIDTH"/>
+		<item value="32" key="DIALOG_Y_ORIGIN"/>
+		<item value="640" key="DIALOG_HEIGHT"/>
+		<item value="494" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>
