@@ -1,0 +1,13 @@
+<module>
+
+    <!--
+	    This file is automatically updated based on new dependencies by the
+	    goal "vaadin:update-widgetset".
+    -->
+
+
+    <!-- Inherit DefaultWidgetSet -->
+
+    <inherits name="com.vaadin.terminal.gwt.DefaultWidgetSet" />
+
+</module>

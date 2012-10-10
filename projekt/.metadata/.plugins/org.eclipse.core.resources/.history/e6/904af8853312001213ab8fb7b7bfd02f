@@ -1,0 +1,5 @@
+com.vaadin.integration.eclipse.useLatestNightly=false
+com.vaadin.integration.eclipse.widgetsetCompilationEta=328353
+com.vaadin.integration.eclipse.widgetsetDirty=true
+com.vaadin.integration.eclipse.widgetsetStyle=OBF
+eclipse.preferences.version=1
