@@ -9,7 +9,11 @@ import war.domain.Department;
 
 public class HierarchicalDepartmentContainer extends JPAContainer<Department> {
 
-    public HierarchicalDepartmentContainer() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public HierarchicalDepartmentContainer() {
         super(Department.class);
         setEntityProvider(new CachingLocalEntityProvider<Department>(
                 Department.class,

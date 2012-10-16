@@ -1,4 +1,4 @@
-/*package war;
+package war;
 
 import java.util.Set;
 
@@ -19,7 +19,7 @@ import com.vaadin.ui.Window;
 
 /**
  * The Application's "main" class
- *//*
+ */
 @SuppressWarnings("serial")
 public class MyVaadinApplication extends Application {
 
@@ -114,4 +114,4 @@ public class MyVaadinApplication extends Application {
 	}
 
 }
-*/
+

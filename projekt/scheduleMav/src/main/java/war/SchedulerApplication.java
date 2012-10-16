@@ -6,8 +6,10 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import war.data.DemoDataGenerator;
 import war.domain.CalendarEventCIC;
 import war.ui.AddressBookMainView;
+import war.ui.AutoCrudViews;
 import war.ui.FormAgency;
 import war.ui.FormGroup;
 import war.ui.FormPOP;
@@ -74,6 +76,7 @@ private Button monthButton;
 private Button weekButton;
 private Button nextButton;
 private Button prevButton;
+private Button DataButton;
 private Select timeZoneSelect; //optional
 private Select formatSelect; 
 private Select localeSelect;//optional
@@ -101,9 +104,9 @@ public static final String PERSISTENCE_UNIT = "war";
 
 
 private AbsoluteLayout mainLayout;
-private TabSheet MainTabSheet;
+public TabSheet MainTabSheet;
 private HorizontalSplitPanel ReportSplitPanel;
-private HorizontalSplitPanel POPSplitPanel;
+//public HorizontalSplitPanel POPSplitPanel;
 private HorizontalSplitPanel AgenciesSplitPanel;
 private HorizontalSplitPanel GroupSplitPanel;
 private HorizontalSplitPanel CalendarSplitPanel;
@@ -126,14 +129,14 @@ private void initLayoutContent() {
     //layout.addTab(h2, "Calendar", null);
    // layout.addTab(new FormGroup(), "Group", null);
    // layout.addTab(new FormAgency(), "Agencies", null);
-  //  layout.addTab(new FormPOP(), "POPs", null);
+	MainTabSheet.addTab(new FormPOP(), "POPs", null);
     //layout.addTab(new FormSetting(), "Setup", null);
-   // layout.addTab(new AddressBookMainView(), "TEST", null);
  
+	//MainTabSheet.addTab(new AddressBookMainView(), "TEST", null);
    // layout.addTab(new Label("Here  we will   generate some reports" +
    // 		" (List of Groups, Agencies, Agents, Masses etc.."),
 	//          "Reports", null );
-    //layout.addTab(new AutoCrudViews(), "TEST", null);
+	//MainTabSheet.addTab(new AddressBookMainView(), "TEST", null);
   
 }
 
@@ -186,13 +189,7 @@ private TabSheet buildMainTabSheet() {
 	AgenciesSplitPanel.setMargin(false);
 	MainTabSheet.addTab(AgenciesSplitPanel, "Agencies", null);
 	
-	// POPSplitPanel
-	POPSplitPanel = new HorizontalSplitPanel();
-	POPSplitPanel.setImmediate(false);
-	POPSplitPanel.setWidth("100.0%");
-	POPSplitPanel.setHeight("100.0%");
-	POPSplitPanel.setMargin(false);
-	MainTabSheet.addTab(POPSplitPanel, "Places of Prayers", null);
+	
 	
 	// ReportSplitPanel
 	ReportSplitPanel = new HorizontalSplitPanel();
@@ -257,6 +254,7 @@ private HorizontalSplitPanel buildCalendarSplitPanel() {
 	    CalPanel.addComponent(hideWeekendsButton);
 	    CalPanel.addComponent(readOnlyButton);
 	    CalPanel.addComponent(disabledButton);
+	    CalPanel.addComponent(DataButton);
 	    controlPanel1.setMargin(true);
 	    controlPanel1.setSpacing(true);
 	    controlPanel.setComponentAlignment(controlPanel1,Alignment.BOTTOM_CENTER);
@@ -375,6 +373,15 @@ private void initNavigationButtons() {
 
         public void buttonClick(ClickEvent event) {
             handlePreviousButtonClick();
+        }
+    });
+    
+    DataButton = new Button("Load sample data", new Button.ClickListener() {
+        private static final long serialVersionUID = 1L;
+
+        public void buttonClick(ClickEvent event) {
+        	DemoDataGenerator.create();
+           
         }
     });
 }

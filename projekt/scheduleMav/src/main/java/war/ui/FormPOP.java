@@ -1,6 +1,7 @@
 package war.ui;
 
 //import com.vaadin.addon.jpacontainer.JPAContainer;
+
 import com.vaadin.data.Item;
 import com.vaadin.data.Property;
 import com.vaadin.data.Property.ValueChangeEvent;
@@ -36,7 +37,7 @@ import com.vaadin.ui.HorizontalSplitPanel;
 import com.vaadin.ui.Table;
 
 public class FormPOP extends CustomComponent {
-	private HorizontalSplitPanel mainLayout;
+	//private HorizontalSplitPanel mainLayout;
 	private TabSheet popTabPanel;
 	private static final long serialVersionUID = 9139168240248675338L;
     private IndexedContainer addressBookData = createRandomizeData();
@@ -56,24 +57,39 @@ public class FormPOP extends CustomComponent {
     
 private static String[] visibleCols = new String[] { "POP ID","POP Name" };
 
+public HorizontalSplitPanel POPSplitPanel;
+
 public FormPOP()  {
 	buildLayoutPOP();
-	setCompositionRoot(mainLayout);	
+	setCompositionRoot(POPSplitPanel);	
+	
+	// POPSplitPanel
+		POPSplitPanel = new HorizontalSplitPanel();
+		POPSplitPanel.setImmediate(false);
+		POPSplitPanel.setWidth("100.0%");
+		POPSplitPanel.setHeight("100.0%");
+		POPSplitPanel.setMargin(false);
+		//MainTabSheet.addTab(POPSplitPanel, "Places of Prayers", null);
+		
 }
 
 private HorizontalSplitPanel buildLayoutPOP() {
-	mainLayout = new HorizontalSplitPanel();
-	mainLayout.setImmediate(false);
-	mainLayout.setSizeFull();
-	mainLayout.setMargin(true);
+	
+	POPSplitPanel = new HorizontalSplitPanel();
+	POPSplitPanel.setImmediate(false);
+	POPSplitPanel.setSizeFull();
+	POPSplitPanel.setMargin(true);
 	setSizeFull();
 	//add some components
-	mainLayout.addComponent(left);
-
-	left.addComponent(contactList);
-	left.addComponent(topLeftCorner);
+	POPSplitPanel.addComponent(left);
+	
 	left.addComponent(buttonLeft);
-	contactList.setSizeFull();
+	left.addComponent(topLeftCorner);
+	left.addComponent(contactList);
+	//left.addComponent(topLeftCorner);
+	//left.addComponent(buttonLeft);
+	contactList.setHeight("100%");
+	contactList.setWidth("100%");
 	contactList.setPageLength(22);
 
   	 //other init components
@@ -82,8 +98,8 @@ private HorizontalSplitPanel buildLayoutPOP() {
 	   initFilteringControls(); //	
 	   
 	popTabPanel = buildGroupTabPanel();
-	mainLayout.addComponent(popTabPanel);
-	return mainLayout;
+	POPSplitPanel.addComponent(popTabPanel);
+	return POPSplitPanel;
 }
 private TabSheet buildGroupTabPanel() {
 	

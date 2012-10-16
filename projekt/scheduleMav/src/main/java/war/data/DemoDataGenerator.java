@@ -97,7 +97,7 @@ public class DemoDataGenerator {
 
 	public static void createAgencies() {
 		EntityManager em = Persistence
-				.createEntityManagerFactory("dataBook")
+				.createEntityManagerFactory("war")
 				.createEntityManager();
 
 		em.getTransaction().begin();
