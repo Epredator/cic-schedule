@@ -17,33 +17,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/gwt-user.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="file:/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/doc/javadoc/"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/gwt-dev.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="file:/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/doc/javadoc/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/validation-api-1.0.0.GA.jar" sourcepath="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -55,5 +28,18 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/gwt-user.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/doc/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/gwt-dev.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/doc/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/validation-api-1.0.0.GA.jar" sourcepath="/home/epredator/Downloads/eclipse_junox32_working_version/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201208080121-rel-r42/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

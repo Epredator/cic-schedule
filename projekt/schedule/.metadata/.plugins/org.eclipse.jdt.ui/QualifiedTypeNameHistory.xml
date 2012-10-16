@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.vaadin.addon.calendar.ui.Calendar"/>
+<fullyQualifiedTypeName name="com.vaadin.addon.calendar.event.CalendarEventEditor"/>
+<fullyQualifiedTypeName name="com.vaadin.Application"/>
+<fullyQualifiedTypeName name="com.vaadin.ui.Window"/>
+<fullyQualifiedTypeName name="com.vaadin.ui.CustomComponent"/>
+<fullyQualifiedTypeName name="com.vaadin.ui.AbsoluteLayout"/>
+</qualifiedTypeNameHistroy>

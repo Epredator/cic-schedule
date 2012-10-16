@@ -34,6 +34,7 @@ import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.data.util.BeanItem;
 import com.vaadin.terminal.Sizeable;
+import com.vaadin.ui.AbsoluteLayout;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
@@ -85,7 +86,7 @@ private Button applyEventButton;
 private Mode viewMode = Mode.MONTH;
 public BasicEventProvider dataSource;
 private Button addNewEvent;
-private boolean testBench = true;
+private boolean testBench = false;
 private String calendarHeight = null;
 private String calendarWidth = null;
 private CheckBox disabledButton;
@@ -98,88 +99,197 @@ private boolean showWeeklyView;
 private boolean useSecondResolution;
 public static final String PERSISTENCE_UNIT = "war";
 
+
+private AbsoluteLayout mainLayout;
+private TabSheet MainTabSheet;
+private HorizontalSplitPanel ReportSplitPanel;
+private HorizontalSplitPanel POPSplitPanel;
+private HorizontalSplitPanel AgenciesSplitPanel;
+private HorizontalSplitPanel GroupSplitPanel;
+private HorizontalSplitPanel CalendarSplitPanel;
+
 @Override
 public void init() {
-    setTheme("runo");
+	setTheme("contacts");
     initContent();
 
 }
 private void initLayoutContent() {
-    initNavigationButtons();
-    initHideWeekEndButton();
-    initReadOnlyButton();
-    initDisabledButton();
-    initAddNewEventButton();
+	
+	buildMainLayout();
+	setMainWindow(new Window("Scheduler CICTS", buildMainLayout()));
 
-    TabSheet layout = new TabSheet();
-    layout.setSizeFull();
-    VerticalLayout  CalPanel = new VerticalLayout();
-    setMainWindow(new Window("Scheduler CICTS", layout));
- 
-  
-    HorizontalLayout CalPanel1 = new HorizontalLayout();
-    HorizontalLayout CalPanel2 = new HorizontalLayout();
-    HorizontalLayout CalPanel3 = new HorizontalLayout();
-    HorizontalLayout CalPanel4 = new HorizontalLayout();  
-    
-    CalPanel.addComponent(CalPanel1);
-    CalPanel1.addComponent(addNewEvent);
-    CalPanel1.addComponent(monthButton);
-    CalPanel1.addComponent(weekButton);
-    CalPanel1.setMargin(true,false ,false ,false);
-    
-    CalPanel.addComponent(CalPanel2);
-    CalPanel2.addComponent(prevButton);
-    CalPanel2.addComponent(captionLabel);
-    captionLabel.setWidth("100px");
-    CalPanel2.addComponent(nextButton);
-    CalPanel2.setMargin(true);
-    CalPanel2.setSpacing(true);
-
-    CalPanel.addComponent(CalPanel3);
-
-    CalPanel3.setMargin(true);
-    CalPanel.addComponent(CalPanel4);
-
-    monthButton.setVisible(viewMode == Mode.WEEK);
-    weekButton.setVisible(viewMode == Mode.DAY);
-
-    GridLayout controlPanel = new GridLayout(4, 5);
-    HorizontalLayout controlPanel1 = new HorizontalLayout();
-    controlPanel.addComponent(calendarComponent, 0, 0, 3, 3);
-  
-    controlPanel1.addComponent(localeSelect);
-    controlPanel1.addComponent(timeZoneSelect);
-    controlPanel1.addComponent(formatSelect);
-    controlPanel1.addComponent(hideWeekendsButton);
-    controlPanel1.addComponent(readOnlyButton);
-    controlPanel1.addComponent(disabledButton);
-    controlPanel1.setMargin(true);
-    controlPanel1.setSpacing(true);
-    controlPanel.setComponentAlignment(controlPanel1,Alignment.BOTTOM_CENTER);
-    controlPanel.setSizeFull();
-    controlPanel.addComponent(controlPanel1, 0, 4, 3, 4);
- 
-    //TabSheet layout = (TabSheet) getMainWindow().getContent();
-   
+    //TabSheet layout = new TabSheet();
     //layout.setSizeFull();
-    HorizontalSplitPanel h2 = new HorizontalSplitPanel(); 
-    h2.setSizeFull();
-    h2.setSplitPosition(310, Sizeable.UNITS_PIXELS);
     
-    layout.addTab(h2, "Calendar", null);
-    layout.addTab(new FormGroup(), "Group", null);
-    layout.addTab(new FormAgency(), "Agencies", null);
-    layout.addTab(new FormPOP(), "POPs", null);
+    
+    //layout.addTab(h2, "Calendar", null);
+   // layout.addTab(new FormGroup(), "Group", null);
+   // layout.addTab(new FormAgency(), "Agencies", null);
+  //  layout.addTab(new FormPOP(), "POPs", null);
     //layout.addTab(new FormSetting(), "Setup", null);
-    layout.addTab(new AddressBookMainView(), "TEST", null);
+   // layout.addTab(new AddressBookMainView(), "TEST", null);
  
-    layout.addTab(new Label("Here  we will   generate some reports" +
-    		" (List of Groups, Agencies, Agents, Masses etc.."),
-	          "Reports", null );
+   // layout.addTab(new Label("Here  we will   generate some reports" +
+   // 		" (List of Groups, Agencies, Agents, Masses etc.."),
+	//          "Reports", null );
     //layout.addTab(new AutoCrudViews(), "TEST", null);
-    h2.addComponent(CalPanel);
-    h2.addComponent(controlPanel);   
+  
+}
+
+private AbsoluteLayout buildMainLayout() {
+	// common part: create layout
+	mainLayout = new AbsoluteLayout();
+	mainLayout.setImmediate(false);
+	mainLayout.setWidth("100%");
+	mainLayout.setHeight("100%");
+	mainLayout.setMargin(false);
+	
+	
+
+	
+	// MainTabSheet
+	MainTabSheet = buildMainTabSheet();
+	mainLayout.addComponent(MainTabSheet, "top:0.0px;left:0.0px;");
+	
+	return mainLayout;
+}
+
+private TabSheet buildMainTabSheet() {
+	// common part: create layout
+	MainTabSheet = new TabSheet();
+	MainTabSheet.setImmediate(true);
+	MainTabSheet.setWidth("100.0%");
+	MainTabSheet.setHeight("100.0%");
+	
+	// CalendarSplitPanel
+	CalendarSplitPanel = buildCalendarSplitPanel();
+	MainTabSheet.addTab(CalendarSplitPanel, "Calendar", null);
+	//CalendarSplitPanel.addComponent(prevButton);
+	//CalendarSplitPanel.addComponent(nextButton);  
+	 //controlPanel.addComponent(calendarComponent, 0, 0, 3, 3);
+	
+	// GroupSplitPanel
+	GroupSplitPanel = new HorizontalSplitPanel();
+	GroupSplitPanel.setImmediate(false);
+	GroupSplitPanel.setWidth("100.0%");
+	GroupSplitPanel.setHeight("100.0%");
+	GroupSplitPanel.setMargin(false);
+	MainTabSheet.addTab(GroupSplitPanel, "Group", null);
+	//MainTabSheet.addTab(new Caltest(), "TEST", null);
+	
+	// AgenciesSplitPanel
+	AgenciesSplitPanel = new HorizontalSplitPanel();
+	AgenciesSplitPanel.setImmediate(false);
+	AgenciesSplitPanel.setWidth("100.0%");
+	AgenciesSplitPanel.setHeight("100.0%");
+	AgenciesSplitPanel.setMargin(false);
+	MainTabSheet.addTab(AgenciesSplitPanel, "Agencies", null);
+	
+	// POPSplitPanel
+	POPSplitPanel = new HorizontalSplitPanel();
+	POPSplitPanel.setImmediate(false);
+	POPSplitPanel.setWidth("100.0%");
+	POPSplitPanel.setHeight("100.0%");
+	POPSplitPanel.setMargin(false);
+	MainTabSheet.addTab(POPSplitPanel, "Places of Prayers", null);
+	
+	// ReportSplitPanel
+	ReportSplitPanel = new HorizontalSplitPanel();
+	ReportSplitPanel.setImmediate(false);
+	ReportSplitPanel.setWidth("100.0%");
+	ReportSplitPanel.setHeight("100.0%");
+	ReportSplitPanel.setMargin(false);
+	MainTabSheet.addTab(ReportSplitPanel, "Reports", null);
+	
+	
+	
+	
+	return MainTabSheet;
+}
+
+private HorizontalSplitPanel buildCalendarSplitPanel() {
+	
+		initNavigationButtons();
+	    initHideWeekEndButton();
+	    initReadOnlyButton();
+	    initDisabledButton();
+	    initAddNewEventButton();
+	    
+	    VerticalLayout  CalPanel = new VerticalLayout();
+	    
+	    
+	    
+	    HorizontalLayout CalPanel1 = new HorizontalLayout();
+	    HorizontalLayout CalPanel2 = new HorizontalLayout();
+	    HorizontalLayout CalPanel3 = new HorizontalLayout();
+	    HorizontalLayout CalPanel4 = new HorizontalLayout();  
+	    
+	    CalPanel.addComponent(CalPanel1);
+	    CalPanel1.addComponent(addNewEvent);
+	    CalPanel1.addComponent(monthButton);
+	    CalPanel1.addComponent(weekButton);
+	    CalPanel1.setMargin(true,false ,false ,false);
+	    
+	    CalPanel.addComponent(CalPanel2);
+	    CalPanel2.addComponent(prevButton);
+	    CalPanel2.addComponent(captionLabel);
+	    captionLabel.setWidth("100px");
+	    CalPanel2.addComponent(nextButton);
+	    CalPanel2.setMargin(true);
+	    CalPanel2.setSpacing(true);
+
+	    CalPanel.addComponent(CalPanel3);
+
+	    CalPanel3.setMargin(true);
+	    CalPanel.addComponent(CalPanel4);
+
+	    monthButton.setVisible(viewMode == Mode.WEEK);
+	    weekButton.setVisible(viewMode == Mode.DAY);
+
+	    GridLayout controlPanel = new GridLayout(4, 5);
+	    HorizontalLayout controlPanel1 = new HorizontalLayout();
+	    //controlPanel.addComponent(calendarComponent, 0, 0, 3, 3);
+	  
+	    CalPanel.addComponent(localeSelect);
+	    CalPanel.addComponent(timeZoneSelect);
+	    CalPanel.addComponent(formatSelect);
+	    CalPanel.addComponent(hideWeekendsButton);
+	    CalPanel.addComponent(readOnlyButton);
+	    CalPanel.addComponent(disabledButton);
+	    controlPanel1.setMargin(true);
+	    controlPanel1.setSpacing(true);
+	    controlPanel.setComponentAlignment(controlPanel1,Alignment.BOTTOM_CENTER);
+	    //controlPanel.setSizeFull();
+	   // controlPanel.addComponent(controlPanel1, 0, 4, 3, 4);
+	 
+	    //TabSheet layout = (TabSheet) getMainWindow().getContent();
+	   
+	    //layout.setSizeFull();
+	    HorizontalSplitPanel h2 = new HorizontalSplitPanel(); 
+	    //h2.setSizeFull();
+	   // h2.setSplitPosition(310, Sizeable.UNITS_PIXELS);
+	   
+	    
+	    
+	// common part: create layout
+	CalendarSplitPanel = new HorizontalSplitPanel();
+	CalendarSplitPanel.setImmediate(false);
+	CalendarSplitPanel.setSizeFull();
+	CalendarSplitPanel.setMargin(false);
+	CalendarSplitPanel.setSplitPosition(310, Sizeable.UNITS_PIXELS);
+	
+	// calendarComponent
+	
+	calendarComponent.setImmediate(false);
+	calendarComponent.setSizeFull();
+	   CalendarSplitPanel.addComponent(CalPanel);
+	   calendarComponent.setSizeFull();
+	    CalendarSplitPanel.addComponent(calendarComponent); 
+	
+	
+	
+	return CalendarSplitPanel;
 }
 
 public Field createDateField(String caption) {

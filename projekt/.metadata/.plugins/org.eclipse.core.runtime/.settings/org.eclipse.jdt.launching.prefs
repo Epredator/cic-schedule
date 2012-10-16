@@ -1,4 +1,0 @@
-PREF_VM_INSTALL_SYSTEM_PROPERTY.org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType.1342896566647.java.specification.version=1.7
-eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_CONNECT_TIMEOUT=20000
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1349802010721" defaultVMConnector\="">\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\n<vm id\="1349606717592" name\="java-6-openjdk-i386" path\="/usr/lib/jvm/java-6-openjdk-i386"/>\n<vm id\="1349802010721" name\="jdk1.7.0_07" path\="/home/epredator/Downloads/jdk1.7.0_07"/>\n</vmType>\n</vmSettings>\n

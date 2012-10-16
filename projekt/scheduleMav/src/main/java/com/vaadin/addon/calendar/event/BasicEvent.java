@@ -1,28 +1,11 @@
 /*
-Vaadin Calendar
-Copyright (C) 2009-2011 Oy Vaadin Ltd
-
-This program is available under GNU Affero General Public License (version
-3 or later at your option).
-
-See the file licensing.txt distributed with this software for more
-information about licensing.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+@VaadinAddonLicenseForJavaFiles@
  */
 package com.vaadin.addon.calendar.event;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import com.vaadin.addon.calendar.event.CalendarEvent.EventChangeNotifier;
 
@@ -33,22 +16,14 @@ import com.vaadin.addon.calendar.event.CalendarEvent.EventChangeNotifier;
  * 
  * @author Vaadin Ltd.
  * @version
- * 1.2.1
+ * @VERSION@
  */
-
-@Entity
 @SuppressWarnings("serial")
 public class BasicEvent implements CalendarEventEditor, EventChangeNotifier {
 
-	
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
     private String caption;
     private String description;
-    @Temporal(TemporalType.DATE)
     private Date end;
-    @Temporal(TemporalType.DATE)
     private Date start;
     private String styleName;
     private transient List<EventChangeListener> listeners = new ArrayList<EventChangeListener>();
@@ -98,15 +73,6 @@ public class BasicEvent implements CalendarEventEditor, EventChangeNotifier {
         this.description = description;
         this.start = startDate;
         this.end = endDate;
-    }
-    
-    
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     /*

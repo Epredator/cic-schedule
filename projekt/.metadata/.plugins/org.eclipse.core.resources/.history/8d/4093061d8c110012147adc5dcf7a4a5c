@@ -1,5 +1,0 @@
-bin.includes = META-INF/,\
-               .
-source.. = src/main/java/,\
-           .apt_generated/
-output.. = target/classes/
